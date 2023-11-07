@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hadaaya</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- bottstrap-icon  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- owl-carousel  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- style -->
+    <link rel="stylesheet" href="assets\css\style.css">
+    <link rel="stylesheet" href="assets\css\theme.css">
+</head>
+
+<body>
+    <header>
+        <nav class=" top-0 w-100 px-5 mt-3 bg-white d-lg-block d-none">
+            <div class="px-xl-5 px-2 py-3">
+                <div class="d-flex justify-content-between align-items-center border-yellow pb-4 position-relative">
+                    <div class="d-flex align-items-center gap-3">
+                        <!-- <button class="border-0 bg-transparent text-dark-yellow"><i
+                                class="bi bi-list fs-3"></i></button> -->
+                        <div class="position-relative d-flex align-items-center gap-5">
+                            <img src="assets\imges\icon\nav-search.png" alt="" width="24"
+                                class="position-absolute top-0 mt-1 ms-1">
+                            <input type="search" name="" placeholder="Search" id="inputNav-search"
+                                class="bg-transparent text-dark-yellow ps-4 ms-2 py-1 border-0 outline-none">
+                        </div>
+                    </div>
+                    <div class="position-relative d-flex justify-content-center me-5 pe-5">
+                        <a href="/" class="nav-link  navLogo bg-white px-xxl-4 px-3"><img
+                                src="/assets/imges/icon/logo.png" alt="" class="fs-20 "></a>
+                    </div>
+                    <div class="d-flex gap-3 me-2">
+                        <a href="overview.html" class=""><img src="assets/imges/icon/nav-profile.png" width="24" alt=""
+                                class=""></a>
+                        <a href="" class=""><img src="assets/imges/icon/nav-bag.png" width="24" alt="" class=""></a>
+                        <a href="" class=""><img src="assets/imges/icon/nav-heart.png" width="24" alt="" class=""></a>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between mt-3">
+                    <div
+                        class="col-xxl-4 col-xl-5 col-6 d-flex justify-content-xl-between justify-content-between pe-xxl-0 pe-xl-5 pe-2">
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">new</a></li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">Birdcage
+                                decor</a>
+                        </li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">tins</a></li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">wall clocks</a>
+                        </li>
+                    </div>
+
+                    <div
+                        class="col-xxl-4 col-xl-5 col-6 d-flex align-items-center justify-content-end justify-content-between ps-xxl-0 ps-xl-5 ps-4">
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">cake stands</a>
+                        </li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">pillow cover</a>
+                        </li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">mirrors</a></li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">more</a></li>
+                    </div>
+
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- phone nav bar  -->
+        <nav class=" top-0 w-100 px-md-5 px-3 mt-3 bg-white d-lg-none d-block position-relative">
+            <div class="px-xl-5 px-2 pt-3 pb-md-3 pb-2">
+                <div class="d-flex justify-content-between align-items-center border-yellow pb-4 position-relative">
+                    <div class="d-flex align-items-center gap-2">
+                        <button class="border-0 bg-transparent text-dark-yellow" onclick="openBtn()"><i
+                                class="bi bi-list fs-3"></i></button>
+                        <div class=" d-flex align-items-center gap-5">
+                            <img src="assets\imges\icon\nav-search.png" alt="" class=" top-0 mt-1 ms-1 nav_icon">
+
+                        </div>
+                    </div>
+                    <div class=" d-flex justify-content-center ">
+                        <a href="/" class="nav-link  navLogo bg-white px-xxl-4 px-2"><img
+                                src="/assets/imges/icon/logo.png" alt="" class="fs-20 "></a>
+                    </div>
+                    <div class="d-flex gap-2 me-2">
+                        <a href="overview.html" class="d-lg-block d-none"><img src="assets/imges/icon/nav-profile.png"
+                                alt="" class="nav_icon"></a>
+                        <button class="d-lg-none d-block border-0 bg-transparent" onclick="accountBtn()">
+                            <img src="assets/imges/icon/nav-profile.png" alt="" class="nav_icon">
+                        </button>
+
+                        <a href="" class=""><img src="assets/imges/icon/nav-bag.png" alt="" class="nav_icon"></a>
+                        <a href="" class=""><img src="assets/imges/icon/nav-heart.png" alt="" class="nav_icon"></a>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+            <div class=" h-100vh position-fixed top-0 end-0 start-0  bottom-0  overflow-auto slider z-index10"
+                id="my-slider">
+                <button class="position-absolute top-0 end-0 mt-4 me-2 btn border-0" onclick="closeBtn()"><i
+                        class="bi bi-x-lg fs-4 text-dark-yellow fw-bold"></i></button>
+                <div class=" mt-3 text-center">
+                    <a href="/" class=""><img src="/assets/imges/icon/logo.png" height="50" alt="" class=""></a>
+
+                    <div class="position-relative d-flex align-items-center w-100 gap-5 my-4 px-2 border-bottom pb-2">
+                        <img src="assets\imges\icon\nav-search.png" alt="" width="24"
+                            class="position-absolute top-0 mt-1 ms-1 ">
+                        <input type="search" name="" placeholder="Search" id="inputNav-search"
+                            class="bg-transparent text-dark-yellow ps-4 ms-2 py-1 border-0 w-100  outline-none">
+                    </div>
+                </div>
+                <div class="overflow-auto">
+                    <div class="d-flex flex-column px-3 gap-4 overflow-scroll">
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">new</a></li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">Birdcage
+                                decor</a>
+                        </li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">tins</a></li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">wall clocks</a>
+                        </li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">cake stands</a>
+                        </li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">pillow cover</a>
+                        </li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">mirrors</a></li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">more</a></li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- mobile account  -->
+    <div class="col-12 d-none bg-light mobile-account ps-3 border-end" id="mobileAccount">
+        <button class="position-absolute end-0 top-0 mt-4 me-4 accountCloseBtn btn" onclick="closeAccountBtn()"><i
+                class="bi bi-x-lg fs-4"></i></button>
+        <div class="">
+            <div class="d-flex gap-1 align-items-center pt-3">
+                <a href="/" class="nav-link text-capitalize text-secondary fs-15">home</a>
+                <i class="bi bi-chevron-right fs-15 text-secondary"></i>
+                <a href="" class="nav-link text-capitalize text-secondary fs-15">account</a>
+                <i class="bi bi-chevron-right fs-15 text-secondary"></i>
+                <a href="" class="nav-link text-capitalize text-secondary fs-15">Privacy policy</a>
+            </div>
+            <h3 class="text-capitalize border-bottom py-3">Account</h3>
+            <div class="d-flex flex-column gap-3 mt-4">
+                <li class="nav-link"><a href=""
+                        class="nav-link text-uppercase fs-18 fw-400 work-sans">Overview</a></li>
+                <li class="nav-link"><a href="address.html"
+                        class="nav-link text-uppercase fs-18 fw-400 work-sans">address</a></li>
+                <li class="nav-link"><a href="order.html"
+                        class="nav-link text-uppercase fs-18 fw-400 work-sans">Orders</a></li>
+                <li class="nav-link"><a href="t&c.html" class="nav-link text-uppercase fs-18 fw-400 work-sans">Terms &
+                        condition</a></li>
+                <li class="nav-link"><a href="p&p.html" class="nav-link text-uppercase fs-18 fw-400 work-sans  text-dark-yellow">Privacy
+                        Policy</a></li>
+                <li class="nav-link"><a href="r&p.html" class="nav-link text-uppercase fs-18 fw-400 work-sans">return
+                        Policy</a></li>
+                <li class="nav-link"><a href="" class="nav-link text-uppercase fs-18 fw-400 work-sans">Logout</a></li>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <section class="d-flex justify-content-center align-items-center">
+        <div class="container-fluid px-md-5 ms-xl-5 mt-lg-5 d-flex justify-content-between">
+            <div class="col-xl-3 col-4 d-lg-block d-none sticky-top ps-3 border-end">
+                <div class="sticky-top">
+                    <div class="d-flex gap-1 align-items-center pt-3">
+                        <a href="/" class="nav-link text-capitalize text-secondary fs-15">home</a>
+                        <i class="bi bi-chevron-right fs-15 text-secondary"></i>
+                        <a href="" class="nav-link text-capitalize text-secondary fs-15">account</a>
+                        <i class="bi bi-chevron-right fs-15 text-secondary"></i>
+                        <a href="" class="nav-link text-capitalize text-secondary fs-15">Privacy policy</a>
+                    </div>
+                    <h3 class="text-capitalize border-bottom py-3">Account</h3>
+                    <div class="d-flex flex-column gap-3 mt-4">
+                        <li class="nav-link"><a href="overview.html"
+                                class="nav-link text-uppercase fs-18 fw-400 work-sans ">Overview</a>
+                        </li>
+                        <li class="nav-link"><a href="address.html"
+                                class="nav-link text-uppercase fs-18 fw-400 work-sans">address</a></li>
+                        <li class="nav-link"><a href="order.html"
+                                class="nav-link text-uppercase fs-18 fw-400 work-sans">Orders</a></li>
+                        <li class="nav-link"><a href="t&c.html"
+                                class="nav-link text-uppercase fs-18 fw-400 work-sans">Terms &
+                                condition</a></li>
+                        <li class="nav-link"><a href="p&p.html"
+                                class="nav-link text-uppercase fs-18 fw-400 work-sans text-dark-yellow">Privacy
+                                Policy</a></li>
+                        <li class="nav-link"><a href="r&p.html"
+                                class="nav-link text-uppercase fs-18 fw-400 work-sans">return
+                                Policy</a></li>
+                        <li class="nav-link"><a href=""
+                                class="nav-link text-uppercase fs-18 fw-400 work-sans">Logout</a></li>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-xl-9 col-lg-8 col-12 ps-lg-4 ps-1 pt-3">
+                <h4 class="text-capitalize poppins fs-2 fw-400">Privacy policy</h4>
+                <p class="poppins text-capitalize fs-18 lh-30 mt-lg-4 mt-3 text-justify">Sorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.</p>
+                <p class="poppins text-capitalize fs-18 text-indent lh-30 mt-lg-4 mt-3 text-justify">Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat ex eu vestibulum vestibulum. Morbi a eleifend magna. Nam metus lacus, porttitor eu mauris a, blandit ultrices nibh. Mauris sit amet magna non ligula vestibulum eleifend. Nulla varius volutpat turpis sed lacinia. Nam eget mi in purus lobortis eleifend. Sed nec ante dictum sem condimentum ullamcorper quis venenatis nisi. Proin vitae facilisis nisi, ac posuere leo.</p>
+                <p class="poppins text-capitalize fs-18 text-indent lh-30 mt-lg-4 mt-3 text-justify">Nam pulvinar blandit velit, id condimentum diam faucibus at. Aliquam lacus nisi, sollicitudin at nisi nec, fermentum congue felis. Quisque mauris dolor, fringilla sed tincidunt ac, finibus non odio. Sed vitae mauris nec ante pretium finibus. Donec nisl neque, pharetra ac elit eu, faucibus aliquam ligula. Nullam dictum, tellus tincidunt tempor laoreet, nibh elit sollicitudin felis, eget feugiat sapien diam nec nisl. Aenean gravida turpis nisi, consequat dictum risus dapibus a. Duis felis ante, varius in neque eu, tempor suscipit sem. Maecenas ullamcorper gravida sem sit amet cursus. Etiam pulvinar purus vitae justo pharetra consequat. Mauris id mi ut arcu feugiat maximus. Mauris consequat tellus id tempus aliquet.</p>
+                <p class="poppins text-capitalize fs-18 text-indent lh-30 mt-lg-4 mt-3 text-justify">Vestibulum dictum ultrices elit a luctus. Sed in ante ut leo congue posuere at sit amet ligula. Pellentesque eget augue nec nisl sodales blandit sed et sem. Aenean quis finibus arcu, in hendrerit purus. Praesent ac aliquet lorem. Morbi feugiat aliquam ligula, et vestibulum ligula hendrerit vitae. Sed ex lorem, pulvinar sed auctor sit amet, molestie a nibh. Ut euismod nisl arcu, sed placerat nulla volutpat aliquet. Ut id convallis nisl. Ut mauris leo, lacinia sed elit id, sagittis rhoncus odio. Pellentesque sapien libero, lobortis a placerat et, malesuada sit amet dui. Nam sem sapien, congue eu rutrum nec, pellentesque eget ligula.</p>
+                <p class="poppins text-capitalize fs-18 text-indent lh-30 mt-lg-4 mt-3 text-justify">ing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.</p>
+              </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!--************* footer *********** -->
+    <footer class="pt-5 bg-white ">
+        <div class="container d-flex justify-content-center align-items-center flex-column">
+            <div class="col-xl-5 col-lg-7 col-md-9 col-12 px-md-4 px-2 text-center pt-4">
+                <h1 class="text-capitalize fw-600">Join our newsletter</h1>
+                <p class=" work-sans fs-5 text-uppercase lh-28">Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.</p>
+                <div class="d-flex border">
+                    <input type="email" class="w-100 border border-2 border-dark fs-4 px-2">
+                    <button class="border border-2 border-dark border-start-0 bg-transparent"><i
+                            class="bi bi-arrow-right fs-2 py-4 px-3"></i></button>
+                </div>
+            </div>
+            <div class=" col-12  footerImg-border mt-5">
+                <a href="" class="nav-link footerNav d-flex align-items-center"><img src="/assets/imges/icon/logo.png"
+                        alt="" class="img-contain"></a>
+            </div>
+            <div class="col-12 py-5">
+                <div class="d-flex justify-content-center align-items-center flex-wrap gap-xl-5 gap-4 lh-1">
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-dark">about us</a>
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-dark">contact us</a>
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-dark">blog</a>
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-dark">return policy</a>
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-dark">terms &
+                        conditions</a>
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-dark">order-status</a>
+                </div>
+                <div class="d-flex justify-content-center flex-wrap mt-md-3 mt-5 gap-xl-5 gap-4 lh-1">
+                    <a href="" class=""><img src="/assets/imges/icon/PayPal - png.png" alt="" height="19" class=""></a>
+                    <a href="" class=""><img src="/assets/imges/icon/Mastercard - png.png" alt="" height="19"
+                            class=""></a>
+                    <a href="" class=""><img src="/assets/imges/icon/RuPay - png.png" alt="" height="19" class=""></a>
+                    <a href="" class=""><img src="/assets/imges/icon/Paytm - png.png" alt="" height="19" class=""></a>
+                    <a href="" class=""><img src="/assets/imges/icon/Visa Inc. - png.png" alt="" height="19"
+                            class=""></a>
+                </div>
+            </div>
+            <p class="text-gray fs-10 text-center text-uppercase ">© Copyright 2023, hOUSE OF HADAAYA.inc</p>
+        </div>
+    </footer>
+
+
+    <script>
+        // // account page 
+        // function accountBtn() {
+        //     document.querySelector("#mobileAccount").classList.toggle("none")
+        //     // document.querySelector("#mobileAccount").classList.add("block");
+        // }
+        // function closeAcountBtn() {
+        //     // document.querySelector("#mobileAccount").classList.remove("block");
+        //     document.querySelector("#mobileAccount").classList.
+        // }
+    </script>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- owl-carousel  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets\js\script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

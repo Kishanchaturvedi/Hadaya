@@ -1,0 +1,244 @@
+/* style  Montserrat font-family*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font work sans  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.work-sans {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/* :root{
+    --var
+} */
+
+/* @font-face {
+    font-family: myfonts;
+    src: url(fontFamily\romansstorydemo.otf) !important;
+}
+
+@font-face {
+    font-family: laviossa;
+    src: url(/fontFamily/Laviossa-Medium.otf);
+} */
+.laviossa {
+    font-family: laviossa;
+}
+
+
+.romanceFont {
+    font-family: myfont;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.text-justify{
+    text-align: justify;
+}
+.h-100vh{
+    height: 100vh;
+}
+.lh-17 {
+    line-height: 17px;
+}
+
+.lh-28 {
+    line-height: 28.5px;
+}
+
+.text-green {
+    color: #456447;
+}
+
+.text-brown {
+    color: #A25E49;
+}
+
+/* .text-crim {
+    color: #E9D9BA;
+} */
+
+.text-dark-yellow {
+    color: #AA8117;
+}
+
+.bg-dark-yellow {
+    background: #AA8117;
+}
+
+.text-gray {
+    color: #A1A1AA;
+}
+
+.outline-none {
+    outline: none;
+}
+
+.bg-light-secondary {
+    background: #F4F4F5;
+}
+
+.img-cover {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.img-contain {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+.fs-11{
+    font-size: 11px;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+.fs-14{
+    font-size: 14.32px;
+}
+.fs-17{
+    font-size: 17px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-70 {
+    font-size: 70px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-15 {
+    font-size: 15px !important;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+.fs-20{
+    font-size: 20px;
+}
+.fs-23{
+    font-size: 23px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-60 {
+    font-size: 60px;
+}
+
+.fs-90 {
+    font-size: 90px;
+}
+
+.fs-3rem {
+    font-size: 3rem;
+}
+
+.bg-light-green {
+    background: #37C14D;
+}
+
+.bg-chocolate {
+    background: #C17137;
+}
+
+.bg-light-yellow {
+    background: #C1B337;
+}
+
+.text-indent {
+    text-indent: 50px;
+}
+.lh-30{
+    line-height: 30px;
+}
+
+
+/****************** media query mobile responsive  ***********************/
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+
+ 
+}
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .fs-70 {
+        font-size: 55px;
+    }
+ }
+
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    .fs-70 {
+        font-size: 40px;
+    }
+}
+
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    .fs-23{
+        font-size: 20px;
+    }
+}
+
+
+
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .fs-23{
+        font-size: 15px;
+    }
+    .fs-20{
+        font-size: 12px !important;
+    }
+    .fs-18 {
+        font-size: 14px;
+    }
+
+}
+

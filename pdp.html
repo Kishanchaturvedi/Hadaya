@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hadaaya</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- bottstrap-icon  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- owl-carousel  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- style -->
+    <link rel="stylesheet" href="assets\css\style.css">
+    <link rel="stylesheet" href="assets\css\theme.css">
+</head>
+
+<body>
+    <header>
+        <nav class=" top-0 w-100 px-5 mt-3 bg-white d-lg-block d-none">
+            <div class="px-xl-5 px-2 py-3">
+                <div class="d-flex justify-content-between align-items-center border-yellow pb-4 position-relative">
+                    <div class="d-flex align-items-center gap-3">
+                        <!-- <button class="border-0 bg-transparent text-dark-yellow"><i
+                                class="bi bi-list fs-3"></i></button> -->
+                        <div class="position-relative d-flex align-items-center gap-5">
+                            <img src="assets\imges\icon\nav-search.png" alt="" width="24"
+                                class="position-absolute top-0 mt-1 ms-1">
+                            <input type="search" name="" placeholder="Search" id="inputNav-search"
+                                class="bg-transparent text-dark-yellow ps-4 ms-2 py-1 border-0 outline-none">
+                        </div>
+                    </div>
+                    <div class="position-relative d-flex justify-content-center me-5 pe-5">
+                        <a href="/" class="nav-link  navLogo bg-white px-xxl-4 px-3"><img
+                                src="/assets/imges/icon/logo.png" alt="" class="fs-20 "></a>
+                    </div>
+                    <div class="d-flex gap-3 me-2">
+                        <a href="overview.html" class=""><img src="assets/imges/icon/nav-profile.png" width="24" alt=""
+                                class=""></a>
+                        <a href="" class=""><img src="assets/imges/icon/nav-bag.png" width="24" alt="" class=""></a>
+                        <a href="" class=""><img src="assets/imges/icon/nav-heart.png" width="24" alt="" class=""></a>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between mt-3">
+                    <div
+                        class="col-xxl-4 col-xl-5 col-6 d-flex justify-content-xl-between justify-content-between pe-xxl-0 pe-xl-5 pe-2">
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">new</a></li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">Birdcage
+                                decor</a>
+                        </li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">tins</a></li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">wall clocks</a>
+                        </li>
+                    </div>
+
+                    <div
+                        class="col-xxl-4 col-xl-5 col-6 d-flex align-items-center justify-content-end justify-content-between ps-xxl-0 ps-xl-5 ps-4">
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">cake stands</a>
+                        </li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">pillow cover</a>
+                        </li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">mirrors</a></li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">more</a></li>
+                    </div>
+
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- phone nav bar  -->
+        <nav class=" top-0 w-100 px-md-5 px-3 mt-3 bg-white d-lg-none d-block position-relative">
+            <div class="px-xl-5 px-2 pt-3 pb-md-3 pb-2">
+                <div class="d-flex justify-content-between align-items-center border-yellow pb-4 position-relative">
+                    <div class="d-flex align-items-center gap-2">
+                        <button class="border-0 bg-transparent text-dark-yellow" onclick="openBtn()"><i
+                                class="bi bi-list fs-3"></i></button>
+                        <div class=" d-flex align-items-center gap-5">
+                            <img src="assets\imges\icon\nav-search.png" alt="" class=" top-0 mt-1 ms-1 nav_icon">
+
+                        </div>
+                    </div>
+                    <div class=" d-flex justify-content-center ">
+                        <a href="/" class="nav-link  navLogo bg-white px-xxl-4 px-2"><img
+                                src="/assets/imges/icon/logo.png" alt="" class="fs-20 "></a>
+                    </div>
+                    <div class="d-flex gap-2 me-2">
+                        <a href="overview.html" class=""><img src="assets/imges/icon/nav-profile.png" alt=""
+                                class="nav_icon"></a>
+                        <a href="" class=""><img src="assets/imges/icon/nav-bag.png" alt="" class="nav_icon"></a>
+                        <a href="" class=""><img src="assets/imges/icon/nav-heart.png" alt="" class="nav_icon"></a>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+            <div class=" h-100vh position-fixed top-0 end-0 start-0  bottom-0  bg-light  overflow-auto slider z-index10"
+                id="my-slider">
+                <button class="position-absolute top-0 end-0 mt-4 me-2 btn border-0" onclick="closeBtn()"><i
+                        class="bi bi-x-lg fs-4 text-dark-yellow fw-bold"></i></button>
+                <div class=" mt-3 text-center">
+                    <a href="/" class=""><img src="/assets/imges/icon/logo.png" height="50" alt="" class=""></a>
+
+                    <div class="position-relative d-flex align-items-center w-100 gap-5 my-4 px-2 border-bottom pb-2">
+                        <img src="assets\imges\icon\nav-search.png" alt="" width="24"
+                            class="position-absolute top-0 mt-1 ms-1 ">
+                        <input type="search" name="" placeholder="Search" id="inputNav-search"
+                            class="bg-transparent text-dark-yellow ps-4 ms-2 py-1 border-0 w-100  outline-none">
+                    </div>
+                </div>
+                <div class="overflow-auto">
+                    <div class="d-flex flex-column px-3 gap-4 overflow-scroll">
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">new</a></li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">Birdcage
+                                decor</a>
+                        </li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">tins</a></li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">wall clocks</a>
+                        </li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">cake stands</a>
+                        </li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">pillow cover</a>
+                        </li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">mirrors</a></li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">more</a></li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-xxl px-xxl-0 px-md-4  mt-4">
+        <div class="d-lg-flex justify-content-between p-0 mx-0">
+            <div class="col-lg-7">
+                <div class="d-lg-flex d-none flex-wrap justify-content-between">
+
+                    <div class="col-6 moov-img p-1">
+                        <img src="/assets/imges/img/pdp-1.png" alt="" class="img-cover">
+                    </div>
+                    <div class="col-6 moov-img p-1">
+                        <img src="/assets/imges/img/pdp-2.png" alt="" class="img-cover">
+                    </div>
+
+                    <div class="col-6 moov-img p-1">
+                        <img src="/assets/imges/img/pdp-3.png" alt="" class="img-cover">
+                    </div>
+                    <div class="col-6 moov-img p-1">
+                        <img src="/assets/imges/img/pdp-4.png" alt="" class="img-cover">
+                    </div>
+                    <div class="col-6 moov-img p-1">
+                        <img src="https://images.unsplash.com/photo-1682687220198-88e9bdea9931?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8"
+                            alt="" class="img-cover">
+                    </div>
+                </div>
+
+
+                <div class="d-lg-none d-lg-none">
+                    <div class="owl-carousel owl-theme " id="owls">
+                        <div class="item">
+                            <div class="moov-img">
+                                <img src="/assets/imges/img/pdp-1.png" alt="" class="img-cover">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="moov-img">
+                                <img src="/assets/imges/img/pdp-2.png" alt="" class="img-cover">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="moov-img">
+                                <img src="/assets/imges/img/pdp-3.png" alt="" class="img-cover">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="moov-img">
+                                <img src="/assets/imges/img/pdp-4.png" alt="" class="img-cover">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5 pt-xl-0 mt-4">
+                <div class=" col-lg-10 col-md-11 col-12 sticky-top m-auto pt-2">
+                    <a href="" class="nav-link text-secondary text-uppercase fs-15 work-sans"><i
+                            class="bi-chevron-left"></i>
+                        back</a>
+                    <h2 class="text-dark-yellow text-capitalize fw-600 mt-3">Red Planter Hadaaya</h2>
+                    <p class="text-secondary text-uppercase  fs-15 fw-400 lh-17 work-sans mb-0">Lorem ipsum dolor
+                        sit amet,
+                        consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    <span class="d-flex gap-1">
+                        <button class="bg-transparent border-0 text-secondary"><i
+                                class="bi bi-star-fill text-warning"></i></button>
+                        <button class="bg-transparent border-0 text-secondary"><i
+                                class="bi bi-star-fill text-warning"></i></button>
+                        <button class="bg-transparent border-0 text-secondary"><i
+                                class="bi bi-star-fill text-warning"></i></button>
+                        <button class="bg-transparent border-0 text-secondary"><i
+                                class="bi bi-star-fill text-warning"></i></button>
+                        <button class="bg-transparent border-0 text-secondary">
+                            <i class="bi bi-star"></i></button>
+                    </span>
+                    <p class="text-secondary mb-0">12 reviews</p>
+                    <p class="fs-15 fw-400 text-capitalize mt-3 work-sans">Sleek and timeless. Titanium glasses with
+                        an
+                        innovative bridge. A frame to suit every face, Morgan is a classic ‘panto’ shape. Named
+                        after James Morgan, the engineer who built the Regent's Canal, it features custom elements
+                        including fluid single piece bridge, adjustable nose pads and temple tips based on
+                        Constantin Brâncuși's Bird in Space.</p>
+                    <div class="mt-3">
+                        <li class="text-capitalize fw-400 work-sans fs-15">99.7% pure titanium front</li>
+                        <li class="text-capitalize fw-400 work-sans fs-15">More than 4hv on the Vickers hardness
+                            test.</li>
+                        <li class="text-capitalize fw-400 work-sans fs-15">Ion plated to over 0.3µ</li>
+                        <li class="text-capitalize fw-400 work-sans fs-15">Weighs under 5.0g</li>
+                        <li class="text-capitalize fw-400 work-sans fs-15">Adjustable titanium nose pads for a
+                            comfortable fit </li>
+                        <li class="text-capitalize fw-400 work-sans fs-15">UV protection</li>
+                    </div>
+                    <div class="d-flex flex-lg-column flex-row-reverse justify-content-between pt-lg-0 pt-4">
+                        <span class="d-flex gap-3 mt-3">
+                            <p class="mb-0 text-capitalize">share : </p>
+                            <a href="" class="nav-link text-secondary"><i class="bi bi-facebook"></i></a>
+                            <a href="" class="nav-link text-secondary"><i class="bi bi-twitter"></i></a>
+                            <a href="" class="nav-link text-secondary"><i class="bi bi-pinterest"></i></a>
+                        </span>
+                        <div class="d-flex gap-2 mt-3">
+                            <p class="fs-12 text-capitalize mb-2">select color</p>
+                            <p class="fs-12 text-capitalize mb-2">gold</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="">
+                            <input type="radio" name="" id="" class="">
+                            <label for="" class="select-color bg-liniar-cocho"></label>
+                            <!-- <div class="select-color bg-liniar-cocho"></div> -->
+                        </div>
+                        <div class="">
+                            <div class="select-color bg-liniar-gray"></div>
+                        </div>
+                        <div class="border-dark border border-2 rounded-circle p-1">
+                            <div class="select-color bg-liniar-cocho"></div>
+                        </div>
+                    </div>
+                    <p class="fw-600 fs-4 Work Sans mt-4"><span class="">$</span>29.99</p>
+                    <div class="d-flex gap-3">
+                        <div class="d-flex justify-content-between align-items-center counting-pdp p-1">
+                            <button
+                                class="bg-dark-yellow fs-1 d-flex justify-content-center align-items-center btn-40 border-0 text-white decrease-btn">-</button>
+                            <span class="text-dark-yellow counting">1</span>
+                            <button
+                                class="bg-dark-yellow fs-1 d-flex justify-content-center align-items-center btn-40 border-0 text-white increase-btn">+</button>
+                        </div>
+                        <button class="border-dark_yellow bg-transparent"><i
+                                class="bi bi-heart fs-4 text-dark-yellow"></i></button>
+                    </div>
+                    <div class="d-flex gap-3 mt-3">
+                        <button class="btn_yellow text-capitalize fs-5 fw-400">buy now</button>
+                        <button class="btn-outline_yellow text-capitalize fs-5 fw-400 bg-transparent">add to
+                            cart</button>
+                    </div>
+                    <div class="d-flex gap-4 mt-5">
+                        <button class="payment-btn rounded"><img src="/assets/imges/icon/visa.png" height="23" alt=""
+                                class=""></button>
+                        <button class="payment-btn rounded"><img src="/assets/imges/icon/mastercard.png" height="42"
+                                alt="" class=""></button>
+                        <button class="payment-btn rounded"><img src="/assets/imges/icon/paypal.png" height="19.78"
+                                alt="" class=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class=" mt-5 px-md-3">
+            <h2 class="work-sans fs-1 fw-400 text-capitalize pb-3 pt-3">Product you may like</h2>
+            <div class="owl-carousel owl-theme d-flex justify-content-center align-items-center gap-2 ps-md-0 ps-2"
+                id="carouselCard-3">
+                <div class="item mx-auto">
+                    <div class="mx-auto carousel-card m-auto bg-light w-auto position-relative">
+                        <div class="carouselCard_img m-auto">
+                            <img src="/assets/imges/img/img-1.png" alt="" class="img-cover">
+                            <div class="lh-1 ps-3 py-2">
+                                <p class="text-uppercase text-secondary mb-0 fs-3">hadaaya tin</p>
+                                <p class="fw-bold"><span class="">$</span>29.99</p>
+                            </div>
+                        </div>
+                        <div class="position-absolute top-0 end-0 m-3">
+                            <button class="bg-transparent border-0"><i
+                                    class="bi bi-heart-fill text-white fs-4"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item mx-auto">
+                    <div class="mx-auto carousel-card m-auto bg-light w-auto position-relative">
+                        <div class="carouselCard_img m-auto">
+                            <img src="/assets/imges/img/img-2.png" alt="" class="img-cover">
+                            <div class="lh-1 ps-3 py-2">
+                                <p class="text-uppercase text-secondary mb-0 fs-3">hadaaya tin</p>
+                                <p class="fw-bold"><span class="">$</span>29.99</p>
+                            </div>
+                        </div>
+                        <div class="position-absolute top-0 end-0 m-3">
+                            <button class="bg-transparent border-0"><i
+                                    class="bi bi-heart-fill text-white fs-4"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item mx-auto">
+                    <div class="mx-auto carousel-card m-auto bg-light w-auto position-relative">
+                        <div class="carouselCard_img m-auto">
+                            <img src="/assets/imges/img/img-3.png" alt="" class="img-cover">
+                            <div class="lh-1 ps-3 py-2">
+                                <p class="text-uppercase text-secondary mb-0 fs-3">hadaaya tin</p>
+                                <p class="fw-bold"><span class="">$</span>29.99</p>
+                            </div>
+                        </div>
+                        <div class="position-absolute top-0 end-0 m-3">
+                            <button class="bg-transparent border-0"><i
+                                    class="bi bi-heart-fill text-white fs-4"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item mx-auto">
+                    <div class="mx-auto carousel-card m-auto bg-light w-auto position-relative">
+                        <div class="carouselCard_img m-auto">
+                            <img src="/assets/imges/img/img-1.png" alt="" class="img-cover">
+                            <div class="lh-1 ps-3 py-2">
+                                <p class="text-uppercase text-secondary mb-0 fs-3">hadaaya tin</p>
+                                <p class="fw-bold"><span class="">$</span>29.99</p>
+                            </div>
+                        </div>
+                        <div class="position-absolute top-0 end-0 m-3">
+                            <button class="bg-transparent border-0"><i
+                                    class="bi bi-heart-fill text-white fs-4"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item mx-auto">
+                    <div class="mx-auto carousel-card m-auto bg-light w-auto position-relative">
+                        <div class="carouselCard_img m-auto">
+                            <img src="/assets/imges/img/img-1.png" alt="" class="img-cover">
+                            <div class="lh-1 ps-3 py-2">
+                                <p class="text-uppercase text-secondary mb-0 fs-3">hadaaya tin</p>
+                                <p class="fw-bold"><span class="">$</span>29.99</p>
+                            </div>
+                        </div>
+                        <div class="position-absolute top-0 end-0 m-3">
+                            <button class="bg-transparent border-0"><i
+                                    class="bi bi-heart-fill text-white fs-4"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+
+
+
+
+
+
+    <!--************* footer *********** -->
+    <footer class="pt-5 bg-white ">
+        <div class="container d-flex justify-content-center align-items-center flex-column">
+            <div class="col-xl-5 col-lg-7 col-md-9 col-12 px-md-4 px-2 text-center pt-4">
+                <h1 class="text-capitalize fw-600">Join our newsletter</h1>
+                <p class=" work-sans fs-5 text-uppercase lh-28">Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.</p>
+                <div class="d-flex border">
+                    <input type="email" class="w-100 border border-2 border-dark fs-4 px-2">
+                    <button class="border border-2 border-dark border-start-0 bg-transparent"><i
+                            class="bi bi-arrow-right fs-2 py-4 px-3"></i></button>
+                </div>
+            </div>
+            <div class=" col-12  footerImg-border mt-5">
+                <a href="" class="nav-link footerNav d-flex align-items-center"><img src="/assets/imges/icon/logo.png"
+                        alt="" class="img-contain"></a>
+            </div>
+            <div class="col-12 py-5">
+                <div class="d-flex justify-content-center align-items-center flex-wrap gap-xl-5 gap-4 lh-1">
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-dark">about us</a>
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-dark">contact us</a>
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-dark">blog</a>
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-dark">return policy</a>
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-dark">terms &
+                        conditions</a>
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-dark">order-status</a>
+                </div>
+                <div class="d-flex justify-content-center flex-wrap mt-md-3 mt-5 gap-xl-5 gap-4 lh-1">
+                    <a href="" class=""><img src="/assets/imges/icon/PayPal - png.png" alt="" height="19" class=""></a>
+                    <a href="" class=""><img src="/assets/imges/icon/Mastercard - png.png" alt="" height="19"
+                            class=""></a>
+                    <a href="" class=""><img src="/assets/imges/icon/RuPay - png.png" alt="" height="19" class=""></a>
+                    <a href="" class=""><img src="/assets/imges/icon/Paytm - png.png" alt="" height="19" class=""></a>
+                    <a href="" class=""><img src="/assets/imges/icon/Visa Inc. - png.png" alt="" height="19"
+                            class=""></a>
+                </div>
+            </div>
+            <p class="text-gray fs-10 text-center text-uppercase ">© Copyright 2023, hOUSE OF HADAAYA.inc</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script>
+       
+    </script>
+
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- owl-carousel  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets\js\script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
