@@ -24,39 +24,6 @@
 </head>
 
 <body>
-    <div class=" h-100vh position-fixed top-0 end-0 start-0  bottom-0  bg-light overflow-auto slider z-index10" id="my-slider">
-        <button class="position-absolute top-0 end-0 mt-4 me-2 btn border-0" onclick="closeBtn()"><i
-                class="bi bi-x-lg fs-4 text-dark-yellow fw-bold"></i></button>
-        <div class=" mt-3 text-center">
-            <a href="/" class=""><img src="/assets/imges/icon/logo.png" height="50" alt="" class=""></a>
-
-            <div class="position-relative d-flex align-items-center w-100 gap-5 my-4 px-2 border-bottom pb-2">
-                <img src="assets\imges\icon\nav-search.png" alt="" width="24"
-                    class="position-absolute top-0 mt-1 ms-1 ">
-                <input type="search" name="" placeholder="Search" id="inputNav-search"
-                    class="bg-transparent text-dark-yellow ps-4 ms-2 py-1 border-0 w-100  outline-none">
-            </div>
-        </div>
-        <div class="overflow-auto">
-            <div class="d-flex flex-column px-3 gap-4 overflow-scroll">
-                <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">new</a></li>
-                <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">Birdcage
-                        decor</a>
-                </li>
-                <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">tins</a></li>
-                <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">wall clocks</a>
-                </li>
-                <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">cake stands</a>
-                </li>
-                <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">pillow cover</a>
-                </li>
-                <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">mirrors</a></li>
-                <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">more</a></li>
-            </div>
-        </div>
-    </div>
-
-
     <header>
         <nav class=" top-0 w-100 px-5 mt-3 bg-white d-lg-block d-none">
             <div class="px-xl-5 px-2 py-3">
@@ -126,8 +93,12 @@
                                 src="/assets/imges/icon/logo.png" alt="" class="fs-20 "></a>
                     </div>
                     <div class="d-flex gap-2 me-2">
-                        <a href="overview.html" class=""><img src="assets/imges/icon/nav-profile.png" alt=""
-                                class="nav_icon"></a>
+                        <a href="overview.html" class="d-lg-block d-none"><img src="assets/imges/icon/nav-profile.png"
+                                alt="" class="nav_icon"></a>
+                        <button class="d-lg-none d-block border-0 bg-transparent" onclick="accountBtn()">
+                            <img src="assets/imges/icon/nav-profile.png" alt="" class="nav_icon">
+                        </button>
+
                         <a href="" class=""><img src="assets/imges/icon/nav-bag.png" alt="" class="nav_icon"></a>
                         <a href="" class=""><img src="assets/imges/icon/nav-heart.png" alt="" class="nav_icon"></a>
                     </div>
@@ -136,11 +107,73 @@
 
             </div>
 
-          
+            <div class=" h-100vh position-fixed top-0 end-0 start-0 bg-light bottom-0 overflow-auto slider z-index10"
+                id="my-slider">
+                <button class="position-absolute top-0 end-0 mt-4 me-2 btn border-0" onclick="closeBtn()"><i
+                        class="bi bi-x-lg fs-4 text-dark-yellow fw-bold"></i></button>
+                <div class=" mt-3 text-center">
+                    <a href="/" class=""><img src="/assets/imges/icon/logo.png" height="50" alt="" class=""></a>
+
+                    <div class="position-relative d-flex align-items-center w-100 gap-5 my-4 px-2 border-bottom pb-2">
+                        <img src="assets\imges\icon\nav-search.png" alt="" width="24"
+                            class="position-absolute top-0 mt-1 ms-1 ">
+                        <input type="search" name="" placeholder="Search" id="inputNav-search"
+                            class="bg-transparent text-dark-yellow ps-4 ms-2 py-1 border-0 w-100  outline-none">
+                    </div>
+                </div>
+                <div class="overflow-auto">
+                    <div class="d-flex flex-column px-3 gap-4 overflow-scroll">
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">new</a></li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">Birdcage
+                                decor</a>
+                        </li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">tins</a></li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">wall clocks</a>
+                        </li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">cake stands</a>
+                        </li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">pillow cover</a>
+                        </li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">mirrors</a></li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">more</a></li>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
+    <!-- mobile account  -->
+    <div class="col-12 d-none bg-light mobile-account ps-3 border-end" id="mobileAccount">
+        <button class="position-absolute end-0 top-0 mt-4 me-4 accountCloseBtn btn" onclick="closeAccountBtn()"><i
+                class="bi bi-x-lg fs-4"></i></button>
+        <div class="">
+            <div class="d-flex gap-1 align-items-center pt-3">
+                <a href="/" class="nav-link text-capitalize text-secondary fs-15">home</a>
+                <i class="bi bi-chevron-right fs-15 text-secondary"></i>
+                <a href="" class="nav-link text-capitalize text-secondary fs-15">account</a>
+                <i class="bi bi-chevron-right fs-15 text-secondary"></i>
+                <a href="" class="nav-link text-capitalize text-secondary fs-15">overview</a>
+            </div>
+            <h3 class="text-capitalize border-bottom py-3">Account</h3>
+            <div class="d-flex flex-column gap-3 mt-4">
+                <li class="nav-link"><a href=""
+                        class="nav-link text-uppercase fs-18 fw-400 work-sans text-dark-yellow">Overview</a></li>
+                <li class="nav-link"><a href="address.html"
+                        class="nav-link text-uppercase fs-18 fw-400 work-sans">address</a></li>
+                <li class="nav-link"><a href="order.html"
+                        class="nav-link text-uppercase fs-18 fw-400 work-sans">Orders</a></li>
+                <li class="nav-link"><a href="t&c.html" class="nav-link text-uppercase fs-18 fw-400 work-sans">Terms &
+                        condition</a></li>
+                <li class="nav-link"><a href="p&p.html" class="nav-link text-uppercase fs-18 fw-400 work-sans">Privacy
+                        Policy</a></li>
+                <li class="nav-link"><a href="r&p.html" class="nav-link text-uppercase fs-18 fw-400 work-sans">return
+                        Policy</a></li>
+                <li class="nav-link"><a href="" class="nav-link text-uppercase fs-18 fw-400 work-sans">Logout</a></li>
+            </div>
 
-    
+        </div>
+    </div>
+
+
     <div class=" d-flex justify-content-end align-items-center mt-lg-3">
         <img src="assets/imges/img/wallpaper_img1.png" alt="" class="img-fluid">
         <!-- <div class="d-flex flex-column justify-content-end  col-6 position-absolute ">

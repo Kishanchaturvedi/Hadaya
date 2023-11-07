@@ -93,8 +93,12 @@
                                 src="/assets/imges/icon/logo.png" alt="" class="fs-20 "></a>
                     </div>
                     <div class="d-flex gap-2 me-2">
-                        <a href="overview.html" class=""><img src="assets/imges/icon/nav-profile.png" alt=""
-                                class="nav_icon"></a>
+                        <a href="overview.html" class="d-lg-block d-none"><img src="assets/imges/icon/nav-profile.png"
+                                alt="" class="nav_icon"></a>
+                        <button class="d-lg-none d-block border-0 bg-transparent" onclick="accountBtn()">
+                            <img src="assets/imges/icon/nav-profile.png" alt="" class="nav_icon">
+                        </button>
+
                         <a href="" class=""><img src="assets/imges/icon/nav-bag.png" alt="" class="nav_icon"></a>
                         <a href="" class=""><img src="assets/imges/icon/nav-heart.png" alt="" class="nav_icon"></a>
                     </div>
@@ -103,12 +107,13 @@
 
             </div>
 
-            <div class=" h-100vh position-fixed top-0 end-0 start-0  bottom-0  bg-light  overflow-auto slider z-index10" id="my-slider">
+            <div class=" h-100vh position-fixed top-0 end-0 start-0 bg-light bottom-0 overflow-auto slider z-index10"
+                id="my-slider">
                 <button class="position-absolute top-0 end-0 mt-4 me-2 btn border-0" onclick="closeBtn()"><i
                         class="bi bi-x-lg fs-4 text-dark-yellow fw-bold"></i></button>
                 <div class=" mt-3 text-center">
                     <a href="/" class=""><img src="/assets/imges/icon/logo.png" height="50" alt="" class=""></a>
-        
+
                     <div class="position-relative d-flex align-items-center w-100 gap-5 my-4 px-2 border-bottom pb-2">
                         <img src="assets\imges\icon\nav-search.png" alt="" width="24"
                             class="position-absolute top-0 mt-1 ms-1 ">
@@ -136,35 +141,73 @@
             </div>
         </nav>
     </header>
+    <!-- mobile account  -->
+    <div class="col-12 d-none bg-light mobile-account ps-3 border-end" id="mobileAccount">
+        <button class="position-absolute end-0 top-0 mt-4 me-4 accountCloseBtn btn" onclick="closeAccountBtn()"><i
+                class="bi bi-x-lg fs-4"></i></button>
+        <div class="">
+            <div class="d-flex gap-1 align-items-center pt-3">
+                <a href="/" class="nav-link text-capitalize text-secondary fs-15">home</a>
+                <i class="bi bi-chevron-right fs-15 text-secondary"></i>
+                <a href="" class="nav-link text-capitalize text-secondary fs-15">account</a>
+                <i class="bi bi-chevron-right fs-15 text-secondary"></i>
+                <a href="" class="nav-link text-capitalize text-secondary fs-15">address</a>
+            </div>
+            <h3 class="text-capitalize border-bottom py-3">Account</h3>
+            <div class="d-flex flex-column gap-3 mt-4">
+                <li class="nav-link"><a href="overview.html"
+                        class="nav-link text-uppercase fs-18 fw-400 work-sans ">Overview</a></li>
+                <li class="nav-link"><a href="address.html"
+                        class="nav-link text-uppercase fs-18 fw-400 work-sans text-dark-yellow">address</a></li>
+                <li class="nav-link"><a href="order.html"
+                        class="nav-link text-uppercase fs-18 fw-400 work-sans">Orders</a></li>
+                <li class="nav-link"><a href="t&c.html" class="nav-link text-uppercase fs-18 fw-400 work-sans ">Terms &
+                        condition</a></li>
+                <li class="nav-link"><a href="p&p.html" class="nav-link text-uppercase fs-18 fw-400 work-sans">Privacy
+                        Policy</a></li>
+                <li class="nav-link"><a href="r&p.html" class="nav-link text-uppercase fs-18 fw-400 work-sans">return
+                        Policy</a></li>
+                <li class="nav-link"><a href="" class="nav-link text-uppercase fs-18 fw-400 work-sans">Logout</a></li>
+            </div>
+
+        </div>
+    </div>
+
+
 
     <section class="d-flex justify-content-center align-items-center">
-        <div class="container-fluid px-5 ms-5 mt-5 d-flex justify-content-between">
-            <div class="col-3 sticky-top ps-3 border-end">
+        <div class="container-fluid px-md-5 ms-xl-5 mt-lg-5 d-flex justify-content-between">
+            <div class="col-xl-3 col-4 d-lg-block d-none sticky-top ps-3 border-end">
                 <div class="sticky-top">
                     <div class="d-flex gap-1 align-items-center pt-3">
                         <a href="/" class="nav-link text-capitalize text-secondary fs-15">home</a>
                         <i class="bi bi-chevron-right fs-15 text-secondary"></i>
-                        <a href="#" class="nav-link text-capitalize text-secondary fs-15">account</a>
+                        <a href="" class="nav-link text-capitalize text-secondary fs-15">account</a>
                         <i class="bi bi-chevron-right fs-15 text-secondary"></i>
                         <a href="" class="nav-link text-capitalize text-secondary fs-15">address</a>
                     </div>
                     <h3 class="text-capitalize border-bottom py-3">Account</h3>
                     <div class="d-flex flex-column gap-3 mt-4">
                         <li class="nav-link"><a href="overview.html"
-                                class="nav-link text-uppercase fs-18 fw-400 work-sans">Overview</a></li>
+                                class="nav-link text-uppercase fs-18 fw-400 work-sans">Overview</a>
+                        </li>
                         <li class="nav-link"><a href="address.html"
                                 class="nav-link text-uppercase fs-18 fw-400 work-sans text-dark-yellow">address</a></li>
                         <li class="nav-link"><a href="order.html"
                                 class="nav-link text-uppercase fs-18 fw-400 work-sans">Orders</a></li>
-                        <li class="nav-link"><a href="t&c.html" class="nav-link text-uppercase fs-18 fw-400 work-sans">Terms &
+                        <li class="nav-link"><a href="t&c.html"
+                                class="nav-link text-uppercase fs-18 fw-400 work-sans ">Terms &
                                 condition</a></li>
-                        <li class="nav-link"><a href="p&p.html" class="nav-link text-uppercase fs-18 fw-400 work-sans">Privacy
+                        <li class="nav-link"><a href="p&p.html"
+                                class="nav-link text-uppercase fs-18 fw-400 work-sans">Privacy
                                 Policy</a></li>
-                        <li class="nav-link"><a href="r&p.html" class="nav-link text-uppercase fs-18 fw-400 work-sans">return
+                        <li class="nav-link"><a href="r&p.html"
+                                class="nav-link text-uppercase fs-18 fw-400 work-sans">return
                                 Policy</a></li>
                         <li class="nav-link"><a href=""
                                 class="nav-link text-uppercase fs-18 fw-400 work-sans">Logout</a></li>
                     </div>
+
                 </div>
             </div>
             <div class="col-9 px-4 pe-5">
@@ -178,10 +221,11 @@
 
 
 
+
     <!--************* footer *********** -->
-    <footer class="py-5 bg-white ">
+    <footer class="pt-5 bg-white ">
         <div class="container d-flex justify-content-center align-items-center flex-column">
-            <div class="col-5 px-4 text-center pt-4">
+            <div class="col-xl-5 col-lg-7 col-md-9 col-12 px-md-4 px-2 text-center pt-4">
                 <h1 class="text-capitalize fw-600">Join our newsletter</h1>
                 <p class=" work-sans fs-5 text-uppercase lh-28">Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry.</p>
@@ -196,15 +240,16 @@
                         alt="" class="img-contain"></a>
             </div>
             <div class="col-12 py-5">
-                <div class="d-flex justify-content-center align-items-center flex-wrap gap-5">
-                    <a href="" class="nav-link text-capitalize fs-5 fw-500 text-dark">about us</a>
-                    <a href="" class="nav-link text-capitalize fs-5 fw-500 text-dark">contact us</a>
-                    <a href="" class="nav-link text-capitalize fs-5 fw-500 text-dark">blog</a>
-                    <a href="" class="nav-link text-capitalize fs-5 fw-500 text-dark">return policy</a>
-                    <a href="" class="nav-link text-capitalize fs-5 fw-500 text-dark">terms & conditions</a>
-                    <a href="" class="nav-link text-capitalize fs-5 fw-500 text-dark">order-status</a>
+                <div class="d-flex justify-content-center align-items-center flex-wrap gap-xl-5 gap-4 lh-1">
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-dark">about us</a>
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-dark">contact us</a>
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-dark">blog</a>
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-dark">return policy</a>
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-dark">terms &
+                        conditions</a>
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-dark">order-status</a>
                 </div>
-                <div class="d-flex justify-content-center mt-3 gap-5">
+                <div class="d-flex justify-content-center flex-wrap mt-md-3 mt-5 gap-xl-5 gap-4 lh-1">
                     <a href="" class=""><img src="/assets/imges/icon/PayPal - png.png" alt="" height="19" class=""></a>
                     <a href="" class=""><img src="/assets/imges/icon/Mastercard - png.png" alt="" height="19"
                             class=""></a>
@@ -214,11 +259,9 @@
                             class=""></a>
                 </div>
             </div>
-            <p class="text-gray fs-5 text-uppercase mb-0">© Copyright 2023, hOUSE OF HADAAYA.inc</p>
+            <p class="text-gray fs-10 text-center text-uppercase ">© Copyright 2023, hOUSE OF HADAAYA.inc</p>
         </div>
     </footer>
-
-
 
 
 

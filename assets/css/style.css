@@ -908,6 +908,15 @@ input[type="range"]::-webkit-slider-thumb {
     .top-sticky {
         position: static;
     }
+    
+
+    /* login page  */
+    .absolute-top{
+        position: absolute;
+        left: auto;
+        /* background: white; */
+        margin: auto;
+    }
 
 
 }
