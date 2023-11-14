@@ -84,7 +84,7 @@
                         <button class="border-0 bg-transparent text-dark-yellow" onclick="openBtn()"><i
                                 class="bi bi-list fs-3"></i></button>
                         <div class=" d-flex align-items-center gap-5">
-                            <img src="assets\imges\icon\nav-search.png" alt="" class=" top-0 mt-1 ms-1 nav_icon">
+                           <button class="border-0 bg-transparent"><img src="assets\imges\icon\nav-search.png" alt="" class=" top-0 mt-1 ms-1 nav_icon"></button> 
 
                         </div>
                     </div>
@@ -93,8 +93,12 @@
                                 src="/assets/imges/icon/logo.png" alt="" class="fs-20 "></a>
                     </div>
                     <div class="d-flex gap-2 me-2">
-                        <a href="overview.html" class=""><img src="assets/imges/icon/nav-profile.png" alt=""
-                                class="nav_icon"></a>
+                        <a href="overview.html" class="d-lg-block d-none"><img src="assets/imges/icon/nav-profile.png"
+                                alt="" class="nav_icon"></a>
+                        <button class="d-lg-none d-block border-0 bg-transparent" onclick="accountBtn()">
+                            <img src="assets/imges/icon/nav-profile.png" alt="" class="nav_icon">
+                        </button>
+
                         <a href="" class=""><img src="assets/imges/icon/nav-bag.png" alt="" class="nav_icon"></a>
                         <a href="" class=""><img src="assets/imges/icon/nav-heart.png" alt="" class="nav_icon"></a>
                     </div>
@@ -103,7 +107,7 @@
 
             </div>
 
-            <div class=" h-100vh position-fixed top-0 end-0 start-0  bottom-0  bg-light  overflow-auto slider z-index10"
+            <div class=" h-100vh position-fixed top-0 end-0 start-0 bg-light bottom-0 overflow-auto slider z-index10"
                 id="my-slider">
                 <button class="position-absolute top-0 end-0 mt-4 me-2 btn border-0" onclick="closeBtn()"><i
                         class="bi bi-x-lg fs-4 text-dark-yellow fw-bold"></i></button>
@@ -137,22 +141,55 @@
             </div>
         </nav>
     </header>
+    <!-- mobile account  -->
+    <div class="col-12 d-none bg-light mobile-account ps-3 border-end" id="mobileAccount">
+        <button class="position-absolute end-0 top-0 mt-4 me-4 accountCloseBtn btn" onclick="closeAccountBtn()"><i
+                class="bi bi-x-lg fs-4"></i></button>
+        <div class="">
+            <div class="d-flex gap-1 align-items-center pt-3">
+                <a href="/" class="nav-link text-capitalize text-secondary fs-15">home</a>
+                <i class="bi bi-chevron-right fs-15 text-secondary"></i>
+                <a href="" class="nav-link text-capitalize text-secondary fs-15">account</a>
+                <i class="bi bi-chevron-right fs-15 text-secondary"></i>
+                <a href="" class="nav-link text-capitalize text-secondary fs-15">overview</a>
+            </div>
+            <h3 class="text-capitalize border-bottom py-3">Account</h3>
+            <div class="d-flex flex-column gap-3 mt-4">
+                <li class="nav-link"><a href="" class="nav-link text-uppercase fs-18 fw-400 work-sans">Overview</a></li>
+                <li class="nav-link"><a href="address.html"
+                        class="nav-link text-uppercase fs-18 fw-400 work-sans">address</a></li>
+                <li class="nav-link"><a href="order.html"
+                        class="nav-link text-uppercase fs-18 fw-400 work-sans text-dark-yellow">Orders</a></li>
+                <li class="nav-link"><a href="t&c.html" class="nav-link text-uppercase fs-18 fw-400 work-sans">Terms &
+                        condition</a></li>
+                <li class="nav-link"><a href="p&p.html" class="nav-link text-uppercase fs-18 fw-400 work-sans">Privacy
+                        Policy</a></li>
+                <li class="nav-link"><a href="r&p.html" class="nav-link text-uppercase fs-18 fw-400 work-sans">return
+                        Policy</a></li>
+                <li class="nav-link"><a href="" class="nav-link text-uppercase fs-18 fw-400 work-sans">Logout</a></li>
+            </div>
+
+        </div>
+    </div>
+
+
 
     <section class="d-flex justify-content-center align-items-center">
-        <div class="container-fluid px-5 ms-5 mt-5 d-flex ">
-            <div class="col-3 sticky-top ps-3 border-end">
+        <div class="container-fluid px-md-5 ms-xl-5 mt-lg-5 d-flex justify-content-between">
+            <div class="col-xl-3 col-4 d-lg-block d-none sticky-top ps-3 border-end">
                 <div class="sticky-top">
                     <div class="d-flex gap-1 align-items-center pt-3">
                         <a href="/" class="nav-link text-capitalize text-secondary fs-15">home</a>
                         <i class="bi bi-chevron-right fs-15 text-secondary"></i>
                         <a href="" class="nav-link text-capitalize text-secondary fs-15">account</a>
                         <i class="bi bi-chevron-right fs-15 text-secondary"></i>
-                        <a href="" class="nav-link text-capitalize text-secondary fs-15">order</a>
+                        <a href="" class="nav-link text-capitalize text-secondary fs-15">overview</a>
                     </div>
                     <h3 class="text-capitalize border-bottom py-3">Account</h3>
                     <div class="d-flex flex-column gap-3 mt-4">
-                        <li class="nav-link"><a href="overview.html"
-                                class="nav-link text-uppercase fs-18 fw-400 work-sans">Overview</a></li>
+                        <li class="nav-link"><a href=""
+                                class="nav-link text-uppercase fs-18 fw-400 work-sans">Overview</a>
+                        </li>
                         <li class="nav-link"><a href="address.html"
                                 class="nav-link text-uppercase fs-18 fw-400 work-sans">address</a></li>
                         <li class="nav-link"><a href="order.html"
@@ -172,90 +209,77 @@
 
                 </div>
             </div>
-            <div class="col-8 ps-4">
-                <div class="d-flex justify-content-end align-items-end me-4">
-                    <div class="d-flex gap-3 col-5 position-relative">
-                        <input type="email" class="border w-100 outline-none pe-2 ps-5 fs-6">
-                        <button class="bg-dark-yellow border-0 text-white py-2 px-3 "><i
-                                class="bi bi-sliders fs-4"></i></button>
-                        <img src="/assets/imges/icon/search-gray.png" height="20" alt=""
-                            class=" position-absolute top-0 start-0 mx-3 mt-3">
-                    </div>
-                </div>
-                <div class="d-flex  border-bottom border-2 py-3">
-                    <div class="col-2">
+            <div class=" col-lg-9 col-12 ps-lg-4">
+
+                <div class="d-flex justify-content-around border-bottom border-2 py-3">
+                    <div class="col-xxl-2 col-xl-3 col-md-4 col-3">
                         <div class="order-img">
                             <img src="/assets/imges/img/img-2.png" alt="" class="img-cover">
                         </div>
                     </div>
-                    <div class="col-10 ps-5 ms-3 pe-4 position-relative">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h4 class="text-uppercase fw-500 mb-0">HADAAYA Tin</h4>
-                            <p class="fw-600 fs-5 mb-0">$29.99</p>
+                    <div class="col-xxl-10 col-xl-9 col-8 ps-xxl-5 ms-xl-3 pe-4 position-relative">
+                        <div class="d-flex justify-content-between align-items-center lh-1">
+                            <h5 class="text-uppercase fw-500 mb-0 fs-23">HADAAYA Tin</h5>
+                            <p class="fw-600 fs-5 mb-0 fs-20">$29.99</p>
                         </div>
-                        <div class="d-flex justify-content-between align-items-center mt-1">
-                            <p class="text-secondary text-capitalize m-0 fs-18"><span class="pe-1">color :</span> <span
-                                    class="">blue</span></p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="text-secondary text-capitalize m-0 fs-18"><span class="pe-1 m-0">color
+                                    :</span> <span class="m-0">blue</span></p>
                             <button
-                                class="bg-light-green border-0 py-2 px-2 text-capitalize text-white fs-18">Delivered</button>
-
+                                class="bg-light-green border-0 py-md-2 py-1  px-md-2 px-1 text-capitalize text-white fs-20">Delivered</button>
                         </div>
                         <div class="position-absolute bottom-0">
-                            <p class="fs-18 mb-0">Quantity : 1</p>
+                            <p class="fs-18 mb-0 fs-20">Quantity : 1</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="d-flex  border-bottom border-2 py-3">
-                    <div class="col-2">
+                <div class="d-flex justify-content-around border-bottom border-2 py-3">
+                    <div class="col-xxl-2 col-xl-3 col-md-4 col-3">
                         <div class="order-img">
                             <img src="/assets/imges/img/img-2.png" alt="" class="img-cover">
                         </div>
                     </div>
-                    <div class="col-10 ps-5 ms-3 pe-4 position-relative">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h4 class="text-uppercase fw-500 mb-0">HADAAYA Tins Combo</h4>
-                            <p class="fw-600 fs-5 mb-0">$29.99</p>
+                    <div class="col-xxl-10 col-xl-9 col-8 ps-xxl-5 ms-xl-3 pe-4 position-relative">
+                        <div class="d-flex justify-content-between align-items-center lh-1">
+                            <h5 class="text-uppercase fw-500 mb-0 fs-23">HADAAYA Tin</h5>
+                            <p class="fw-600 fs-5 mb-0 fs-20">$29.99</p>
                         </div>
-                        <div class="d-flex justify-content-between align-items-center mt-1">
-                            <p class="text-secondary text-capitalize m-0 fs-18"><span class="pe-1">color :</span> <span
-                                    class="">blue</span></p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="text-secondary text-capitalize m-0 fs-18"><span class="pe-1 m-0">color
+                                    :</span> <span class="m-0">blue</span></p>
                             <button
-                                class="bg-chocolate border-0 py-2 px-2 text-capitalize text-white fs-18">Canceled</button>
-
+                                class="bg-chocolate border-0 py-md-2 py-1  px-md-2 px-1 text-capitalize text-white fs-20">Canceled</button>
                         </div>
                         <div class="position-absolute bottom-0">
-                            <p class="fs-18 mb-0">Quantity : 1</p>
+                            <p class="fs-18 mb-0 fs-20">Quantity : 1</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="d-flex  border-bottom border-2 py-3">
-                    <div class="col-2">
+                <div class="d-flex justify-content-around border-bottom border-2 py-3">
+                    <div class="col-xxl-2 col-xl-3 col-md-4 col-3">
                         <div class="order-img">
                             <img src="/assets/imges/img/img-2.png" alt="" class="img-cover">
                         </div>
                     </div>
-                    <div class="col-10 ps-5 ms-3 pe-4 position-relative">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h4 class="text-uppercase fw-500 mb-0">HADAAYA Tin</h4>
-                            <p class="fw-600 fs-5 mb-0">$29.99</p>
+                    <div class="col-xxl-10 col-xl-9 col-8 ps-xxl-5 ms-xl-3 pe-4 position-relative">
+                        <div class="d-flex justify-content-between align-items-center lh-1">
+                            <h5 class="text-uppercase fw-500 mb-0 fs-23">HADAAYA Tin</h5>
+                            <p class="fw-600 fs-5 mb-0 fs-20">$29.99</p>
                         </div>
-                        <div class="d-flex justify-content-between align-items-center mt-1">
-                            <p class="text-secondary text-capitalize m-0 fs-18"><span class="pe-1">color :</span> <span
-                                    class="">blue</span></p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="text-secondary text-capitalize m-0 fs-18"><span class="pe-1 m-0">color
+                                    :</span> <span class="m-0">blue</span></p>
                             <button
-                                class="bg-light-yellow border-0 py-2 px-2 text-capitalize text-white fs-18">Returned</button>
-
+                                class="bg-light-yellow border-0 py-md-2 py-1  px-md-2 px-1 text-capitalize text-white fs-20">Returned</button>
                         </div>
                         <div class="position-absolute bottom-0">
-                            <p class="fs-18 mb-0">Quantity : 1</p>
+                            <p class="fs-18 mb-0 fs-20">Quantity : 1</p>
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
     </section>
 
@@ -265,9 +289,9 @@
 
 
     <!--************* footer *********** -->
-    <footer class="py-5 bg-white mt-3">
+    <footer class="pt-5 bg-white ">
         <div class="container d-flex justify-content-center align-items-center flex-column">
-            <div class="col-5 px-4 text-center pt-4">
+            <!-- <div class="col-xl-5 col-lg-7 col-md-9 col-12 px-md-4 px-2 text-center pt-4">
                 <h1 class="text-capitalize fw-600">Join our newsletter</h1>
                 <p class=" work-sans fs-5 text-uppercase lh-28">Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry.</p>
@@ -276,21 +300,22 @@
                     <button class="border border-2 border-dark border-start-0 bg-transparent"><i
                             class="bi bi-arrow-right fs-2 py-4 px-3"></i></button>
                 </div>
-            </div>
+            </div> -->
             <div class=" col-12  footerImg-border mt-5">
                 <a href="" class="nav-link footerNav d-flex align-items-center"><img src="/assets/imges/icon/logo.png"
                         alt="" class="img-contain"></a>
             </div>
             <div class="col-12 py-5">
-                <div class="d-flex justify-content-center align-items-center flex-wrap gap-5">
-                    <a href="" class="nav-link text-capitalize fs-5 fw-500 text-dark">about us</a>
-                    <a href="" class="nav-link text-capitalize fs-5 fw-500 text-dark">contact us</a>
-                    <a href="" class="nav-link text-capitalize fs-5 fw-500 text-dark">blog</a>
-                    <a href="" class="nav-link text-capitalize fs-5 fw-500 text-dark">return policy</a>
-                    <a href="" class="nav-link text-capitalize fs-5 fw-500 text-dark">terms & conditions</a>
-                    <a href="" class="nav-link text-capitalize fs-5 fw-500 text-dark">order-status</a>
+                <div class="d-flex justify-content-center align-items-center flex-wrap gap-xl-5 gap-4 lh-1">
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-dark">about us</a>
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-dark">contact us</a>
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-dark">blog</a>
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-dark">return policy</a>
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-dark">terms &
+                        conditions</a>
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-dark">order-status</a>
                 </div>
-                <div class="d-flex justify-content-center mt-3 gap-5">
+                <div class="d-flex justify-content-center flex-wrap mt-md-3 mt-5 gap-xl-5 gap-4 lh-1">
                     <a href="" class=""><img src="/assets/imges/icon/PayPal - png.png" alt="" height="19" class=""></a>
                     <a href="" class=""><img src="/assets/imges/icon/Mastercard - png.png" alt="" height="19"
                             class=""></a>
@@ -300,11 +325,9 @@
                             class=""></a>
                 </div>
             </div>
-            <p class="text-gray fs-5 text-uppercase mb-0">© Copyright 2023, hOUSE OF HADAAYA.inc</p>
+            <p class="text-gray fs-10 text-center text-uppercase ">© Copyright 2023, hOUSE OF HADAAYA.inc</p>
         </div>
     </footer>
-
-
 
 
 
