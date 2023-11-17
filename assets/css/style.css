@@ -335,6 +335,15 @@
     /* transition: .5s; */
 }
 
+/* .shortDroupdown{
+    bottom: 2.5rem;
+    width: 100%;
+} */
+.shortDroupdown {
+    top: 2.7rem;
+    width: 100%;
+}
+
 .gray-hover:hover {
     background-color: #AA8117;
     color: white;
@@ -388,17 +397,20 @@ span .stock {
     height: 20px;
     width: 20px;
     cursor: pointer;
+
 }
 
-input[type="checkbox"] {
+input[type="checkbox"]+span {
     cursor: pointer;
+    /* opacity: 0; */
+    border: 2px solid black;
     width: 20px;
     height: 20px;
+    /* background: #000; */
+    color: rgba(255, 255, 255, 0);
 }
 
 input[type="checkbox"]:checked+span {
-    /* content: ""; */
-    /* border: 1px solid gray; */
     background-color: #AA8117 !important;
     height: 20px;
     width: 20px;
@@ -408,22 +420,39 @@ input[type="checkbox"]:checked+span {
     margin: 3px 3px 3px 4px;
     padding: #AA8117;
     border: #AA8117 !important;
-    color: #AA8117 !important;
+    color: #ffffff !important;
     cursor: pointer;
+    opacity: 100;
 }
-
-/* .stockR input[type="radio"].stock:checked+span {
-    height: 20px;
-    width: 20px;
-    background: #AA8117;
-    color: red;
-    transition: all 0.5s ease;
-
+/* input[type="checkbox"]:checked+span+i {
+    color: white;
+}
+input[type="checkbox"]+span+i {
+    display: none !important;
+    color: white;
+    background: #000;
 } */
 
-/* .stockR input[type="radio"] {
-    display: none;
-} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* accordion  */
 .accordion {
@@ -733,7 +762,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 /************************* mobile account **************************** */
 .mobile-account {
-    z-index: 1000 !important;
+    z-index: 1500 !important;
     position: absolute;
     height: 100vh;
 }
@@ -898,6 +927,24 @@ input[type="range"]::-webkit-slider-thumb {
     .filter-none {
         display: none;
     }
+    .position-bottom{
+        position: fixed;
+        bottom: 2.4rem;
+    }
+
+    .fixed-btm {
+        position: fixed !important;
+        bottom: 100px;
+        background-color: white;
+        z-index: 1000;
+
+    }
+
+    .absolute-top {
+        bottom: 2.6rem;
+        /* width: 15rem; */
+    }
+
 
     /********************* order page ******************** */
     .order-img {
@@ -908,14 +955,19 @@ input[type="range"]::-webkit-slider-thumb {
     .top-sticky {
         position: static;
     }
-    
+
 
     /* login page  */
-    .absolute-top{
+    .absolute-top {
         position: absolute;
         left: auto;
         /* background: white; */
         margin: auto;
+    }
+
+    .footerNav {
+        height: 60.25px;
+        width: auto;
     }
 
 
@@ -1007,6 +1059,10 @@ input[type="range"]::-webkit-slider-thumb {
     .order-img {
         width: auto;
         height: 100px;
+    }
+    .footerNav {
+        height: 50.25px;
+        width: auto;
     }
 }
 

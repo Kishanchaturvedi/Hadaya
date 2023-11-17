@@ -186,20 +186,11 @@ increaseBtn.addEventListener('click', () => {
 
 // plp page************************
 
-var acc = document.getElementsByClassName("accordion");
-var i;
 
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
-        this.classList.toggle("actives");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-        } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-        }
-    });
-}
+
+
+
+
 
 // plpBtn *****************************************************
 function shortBtn() {
@@ -211,39 +202,39 @@ function filterBtn() {
 
 
 
-// range********************
-window.onload = function () {
-    slideOne();
-    slideTwo();
-}
+// // range********************
+// window.onload = function () {
+//     slideOne();
+//     slideTwo();
+// }
 
-let sliderOne = document.getElementById("slider-1");
-let sliderTwo = document.getElementById("slider-2");
-let displayValOne = document.getElementById("range1");
-let displayValTwo = document.getElementById("range2");
-let minGap = 0;
-let sliderTrack = document.querySelector(".slider-track");
-let sliderMaxValue = document.getElementById("slider-1").max;
+// let sliderOne = document.getElementById("slider-1");
+// let sliderTwo = document.getElementById("slider-2");
+// let displayValOne = document.getElementById("range1");
+// let displayValTwo = document.getElementById("range2");
+// let minGap = 0;
+// let sliderTrack = document.querySelector(".slider-track");
+// let sliderMaxValue = document.getElementById("slider-1").max;
 
-function slideOne() {
-    if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
-        sliderOne.value = parseInt(sliderTwo.value) - minGap;
-    }
-    displayValOne.textContent = sliderOne.value;
-    fillColor();
-}
-function slideTwo() {
-    if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
-        sliderTwo.value = parseInt(sliderOne.value) + minGap;
-    }
-    displayValTwo.textContent = sliderTwo.value;
-    fillColor();
-}
-function fillColor() {
-    percent1 = (sliderOne.value / sliderMaxValue) * 100;
-    percent2 = (sliderTwo.value / sliderMaxValue) * 100;
-    sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #AA8117 ${percent1}% , #AA8117 ${percent2}%, #dadae5 ${percent2}%)`;
-}
+// function slideOne() {
+//     if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
+//         sliderOne.value = parseInt(sliderTwo.value) - minGap;
+//     }
+//     displayValOne.textContent = sliderOne.value;
+//     fillColor();
+// }
+// function slideTwo() {
+//     if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
+//         sliderTwo.value = parseInt(sliderOne.value) + minGap;
+//     }
+//     displayValTwo.textContent = sliderTwo.value;
+//     fillColor();
+// }
+// function fillColor() {
+//     percent1 = (sliderOne.value / sliderMaxValue) * 100;
+//     percent2 = (sliderTwo.value / sliderMaxValue) * 100;
+//     sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #AA8117 ${percent1}% , #AA8117 ${percent2}%, #dadae5 ${percent2}%)`;
+// }
 
 
 // pdp 

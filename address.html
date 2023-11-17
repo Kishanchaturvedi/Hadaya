@@ -210,8 +210,59 @@
 
                 </div>
             </div>
-            <div class="col-9 px-4 pe-5">
+            <div class="col-xl-9 col-lg-10  px-md-4 px-2 pe-lg-5">
+                <div class="col-lg-9 border p-md-4 p-3">
+                    <div class="col-xl-7 col-lg-10 col-md-8 position-relative">
+                        <h4 class="fs-18 text-uppercase">Saved address</h4>
+                        <p class="text-capitalize pt-4">b-wing, gold field plaza, kala killa,
+                            sion bandra link road,
+                            dharavi, Mumbai Maharashtra</p>
+                        <p class="text-capitalize fs-18 pt-5">mumbai : <span class="">400072</span></p>
+                        <div class="d-flex gap-2 pt-4 pb-3">
+                            <button
+                                class="bg-dark-yellow text-white py-2 px-3 text-capitalize border-0">default</button>
+                            <button class="text-dark py-2 px-3 text-capitalize border-0">home</button>
+                        </div>
+                        <button class="position-absolute top-0 end-0"><i class="bi bi-pencil-fill"></i></button>
+                    </div>
 
+                </div>
+                <!-- Button trigger modal -->
+                <button type="button"
+                    class="d-flex align-items-center justify-content-center gap-1 mt-5 py-2 bg-transparent col-xl-9 col-lg-10 col-12 border-dashed"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <span class="fs-4">+</span> Add New Address</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5 text-capitalize" id="exampleModalLabel">add new address</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <input type="text" class="col-12 border py-2 outline-none px-2 mb-3"
+                                    placeholder="Country">
+                                <input type="text" class="col-12 border py-2 outline-none px-2 mb-3"
+                                    placeholder="Street">
+                                <input type="text" class="col-12 border py-2 outline-none px-2 mb-3"
+                                    placeholder="City">
+                                <input type="text" class="col-12 border py-2 outline-none px-2 mb-3"
+                                    placeholder="Pincode">
+                                <input type="tel" class="col-12 border py-2 outline-none px-2 mb-3"
+                                    placeholder="Phone Number">
+                                <textarea name="" id="" rows="3" class="w-100 border outline-none py-2 px-2" placeholder="Address"></textarea>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button"
+                                    class="w-100 bg-dark-yellow py-3 text-capitalize border-0 text-white">submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
