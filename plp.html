@@ -174,7 +174,7 @@
     </div>
 
     <div class="wallpaper-plp position-relative d-flex justify-content-start align-items-center mt-3 d-lg-block d-none">
-        <img src="assets/imges/img/wallpaper-plp.png" alt="" class="img-cover">
+        <img src="assets/imges/img/wallpaper-plp.png" alt="" class="img-fluid">
         <div class="position-absolute bottom-0 ms-5 ps-5 mb-4">
             <div class="d-flex">
                 <a href="/" class="nav-link text-capitalize text-light fs-5">home</a>
@@ -188,8 +188,8 @@
 
     <section class="d-flex justify-content-center align-items-center">
         <div class="container-fluid px-xxl-5 ms-xxl-5 mt-lg-5 mt-2 d-lg-flex justify-content-between">
-            <div class="col-xl-3 col-lg-4 ps-lg-3">
-                <div class="sticky-top">
+            <div class="col-xl-3 col-lg-4">
+                <div class="sticky-top px-3">
                     <div class="d-flex align-items-center  d-lg-none d-block px-md-5 px-1">
                         <div class="position-relative d-flex align-items-center gap-5 w-100">
                             <img src="assets\imges\icon\nav-search.png" alt="" width="24"
@@ -200,127 +200,145 @@
                         <!-- <button class=" btn text-uppercase text-secondary pb-2 border-0 bg-transparent">filters</button> -->
                     </div>
                     <h5 class="text-uppercase border-bottom text-secondary pb-2 mt-4 d-lg-block d-none">filters</h5>
-                    <div class="filter-none  px-lg-0 px-4 start-0 end-0 bg-white container-fluid position-bottom "
+                    <!-- <div class="overflow-auto"> -->
+                    <div class="filter-none px-lg-0 px-4 start-0 end-0 bg-white container-fluid position-bottom pt-lg-0 pt-4 h-100 overflow-hidden"
                         id="filter">
-                        <button
-                            class="accordion bg-white text-uppercase mb-0 fs-4 fw-500 px-0 d-flex justify-content-between align-items-center">availability</button>
-                        <div class="panel px-0 d-flex flex-column">
-                            <div class="stockR d-flex  align-items-center position-relative gap-3">
-                                <input type="radio" name="stock" id="stock1"
-                                    class="border stock z-2 opacity-0 cursor-pointer bg-light">
-                                <span class="labels border position-absolute start-0 z-0"></span>
-                                <label for="stock1" class="fs-5 fw-400 mb-0 text-capitalize cursor-pointer">In Stock
-                                    (200)</label>
-                            </div>
-                            <div class="stockR d-flex  align-items-center position-relative gap-3">
-                                <input type="radio" name="stock" id="stock2"
-                                    class="border stock z-2 opacity-0 cursor-pointer bg-light">
-                                <span class="labels border position-absolute start-0 z-0"></span>
-                                <label for="stock2" class="fs-5 fw-400 mb-0 text-capitalize cursor-pointer">Out of stock
-                                    (15)</label>
-                            </div>
-                        </div>
 
-                        <button
-                            class="accordion  bg-white text-uppercase mb-0 fs-4 fw-500 px-0  d-flex justify-content-between align-items-center">price</button>
-                        <div class="panel px-0">
-                            <div class="range_box">
-                                <div class="slider-track"></div>
-                                <input type="range" min="0" max="100" value="30" id="slider-1" oninput="slideOne()">
-                                <input type="range" min="0" max="100" value="70" id="slider-2" oninput="slideTwo()">
-                            </div>
-
-                            <div class="values d-flex justify-content-between align-items-center mt-1">
-                                <span
-                                    class="range_compair d-flex align-items-center justify-content-between bg-light-secondary text-secondary fs-5 fw-500"><span
-                                        class="w-10 border-end">
-                                        $</span>
-                                    <span id="range1"
-                                        class=" fs-5 text-dark d-flex justify-content-start w-50 align-items-center">
-                                        100
-                                    </span>
-                                </span>
-                                <span class="fs-5 fw-500"> To </span>
-                                <span
-                                    class="range_compair d-flex align-items-center justify-content-between bg-light-secondary text-secondary fs-5 fw-500"><span
-                                        class="w-10 border-end">
-                                        $</span>
-                                    <span id="range2"
-                                        class=" fs-5 text-dark d-flex justify-content-start w-50 align-items-center">
-                                        100
-                                    </span>
-                                </span>
-                            </div>
-                        </div>
-
-
-                        <div class="">
+                        <div class="overflow-auto h-100">
                             <button
-                                class="accordion bg-white text-uppercase mb-0 fs-4 fw-500 px-0  d-flex justify-content-between align-items-center">product
-                                category</button>
-                            <div class="panel px-0 d-flex flex-column gap-2">
-                                <div class="d-flex align-items-center gap-4 position-relative">
-
-                                    <input type="checkbox" name="" class=" m-0 z-3 opacity-0" id="check1">
+                                class="accordion bg-white text-uppercase mb-0 fs-5 fw-600 px-0 d-flex justify-content-between align-items-center">availability</button>
+                            <div class="panel px-0 d-flex flex-column">
+                                <div class="stockR d-flex  align-items-center position-relative gap-3">
+                                    <input type="radio" name="stock" id="stock1"
+                                        class="border stock z-2 opacity-0 cursor-pointer bg-light">
                                     <span
-                                        class="spanCheck border position-absolute z-1 start-0 m-0 d-flex justify-content-center align-items-center bg-light"><i
-                                            class="bi bi-check"></i></span>
-                                    <label for="check1"
-                                        class="fs-5 fw-400 mb-0 text-capitalize cursor-pointer">tin</label>
-
+                                        class="labels border position-absolute start-0 z-0 d-flex justify-content-center align-items-center"><i
+                                            class="bi bi-check-lg text-white"></i> </span>
+                                    <label for="stock1" class="fs-5 fw-400 mb-0 text-capitalize cursor-pointer">In
+                                        Stock
+                                        (200)</label>
                                 </div>
-                                <div class="d-flex align-items-center gap-4 position-relative">
-                                    <input type="checkbox" name="" class=" m-0 z-3 opacity-0" id="check2">
+                                <div class="stockR d-flex  align-items-center position-relative gap-3">
+                                    <input type="radio" name="stock" id="stock2"
+                                        class="border stock z-2 opacity-0 cursor-pointer bg-light">
                                     <span
-                                        class="spanCheck border position-absolute z-1 start-0 m-0 d-flex justify-content-center align-items-center bg-light"><i
-                                            class="bi bi-check"></i></span>
-                                    <label for="check2" class="fs-5 fw-400 mb-0 text-capitalize cursor-pointer">bird
-                                        cage
-                                        decor</label>
-                                </div>
-                                <div class="d-flex align-items-center gap-4 position-relative">
-                                    <input type="checkbox" name="" class=" m-0 z-3 opacity-0" id="check3">
-                                    <span
-                                        class="spanCheck border position-absolute z-1 start-0 m-0 d-flex justify-content-center align-items-center bg-light"><i
-                                            class="bi bi-check"></i></span>
-                                    <label for="check3" class="fs-5 fw-400 mb-0 text-capitalize cursor-pointer">Wall
-                                        clock</label>
-                                </div>
-                                <div class="d-flex align-items-center gap-4 position-relative">
-                                    <input type="checkbox" name="" class=" m-0 z-3 opacity-0" id="check4">
-                                    <span
-                                        class="spanCheck border position-absolute z-1 start-0 m-0 d-flex justify-content-center align-items-center bg-light"><i
-                                            class="bi bi-check"></i></span>
-                                    <label for="check4"
-                                        class="fs-5 fw-400 mb-0 text-capitalize cursor-pointer">planter</label>
-                                </div>
-                                <div class="d-flex align-items-center gap-4 position-relative">
-                                    <input type="checkbox" name="" class=" m-0 z-3 opacity-0" id="check5">
-                                    <span
-                                        class="spanCheck border position-absolute z-1 start-0 m-0 d-flex justify-content-center align-items-center bg-light"><i
-                                            class="bi bi-check"></i></span>
-                                    <label for="check5" class="fs-5 fw-400 mb-0 text-capitalize cursor-pointer">candle
-                                        holder</label>
-                                </div>
-                                <div class="d-flex align-items-center gap-4 position-relative">
-                                    <input type="checkbox" name="" class=" m-0 z-3 opacity-0" id="check6">
-                                    <span
-                                        class="spanCheck border position-absolute z-1 start-0 m-0 d-flex justify-content-center align-items-center bg-light"><i
-                                            class="bi bi-check"></i></span>
-                                    <label for="check6" class="fs-5 fw-400 mb-0 text-capitalize cursor-pointer">cake
-                                        stand</label>
-                                </div>
-                                <div class="d-flex align-items-center gap-4 position-relative">
-                                    <input type="checkbox" name="" class=" m-0 z-3 opacity-0" id="check7">
-                                    <span
-                                        class="spanCheck border position-absolute z-1 start-0 m-0 d-flex justify-content-center align-items-center bg-light"><i
-                                            class="bi bi-check"></i></span>
-                                    <label for="check7" class="fs-5 fw-400 mb-0 text-capitalize cursor-pointer">pillow
-                                        cover</label>
+                                        class="labels border position-absolute start-0 z-0 d-flex justify-content-center align-items-center"><i
+                                            class="bi bi-check-lg text-white"></i> </span>
+                                    <label for="stock2" class="fs-5 fw-400 mb-0 text-capitalize cursor-pointer">Out
+                                        of
+                                        stock
+                                        (15)</label>
                                 </div>
                             </div>
-                        </div>
 
+
+
+
+
+
+                            <button
+                                class="accordion  bg-white text-uppercase mb-0 fs-4 fw-500 px-0  d-flex justify-content-between align-items-center">price</button>
+                            <div class="panel px-0">
+                                <div class="range_box">
+                                    <div class="slider-track"></div>
+                                    <input type="range" min="0" max="100" value="30" id="slider-1" oninput="slideOne()">
+                                    <input type="range" min="0" max="100" value="70" id="slider-2" oninput="slideTwo()">
+                                </div>
+
+                                <div class="values d-flex justify-content-between align-items-center mt-1">
+                                    <span
+                                        class="range_compair d-flex align-items-center justify-content-between bg-light-secondary text-secondary fs-5 fw-500"><span
+                                            class="w-10 border-end">
+                                            $</span>
+                                        <span id="range1"
+                                            class=" fs-5 text-dark d-flex justify-content-start w-50 align-items-center">
+                                            100
+                                        </span>
+                                    </span>
+                                    <span class="fs-5 fw-500"> To </span>
+                                    <span
+                                        class="range_compair d-flex align-items-center justify-content-between bg-light-secondary text-secondary fs-5 fw-500"><span
+                                            class="w-10 border-end">
+                                            $</span>
+                                        <span id="range2"
+                                            class=" fs-5 text-dark d-flex justify-content-start w-50 align-items-center">
+                                            100
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+
+
+                            <div class="">
+                                <button
+                                    class="accordion bg-white text-uppercase mb-0 fs-5 fw-600 px-0  d-flex justify-content-between align-items-center">product
+                                    category</button>
+                                <div class="panel px-0 d-flex flex-column gap-2">
+                                    <div class="d-flex align-items-center gap-4 position-relative">
+
+                                        <input type="checkbox" name="" class=" m-0 z-3 opacity-0" id="check1">
+                                        <span
+                                            class="spanCheck border position-absolute z-1 start-0 m-0 d-flex justify-content-center align-items-center bg-light"><i
+                                                class="bi bi-check"></i></span>
+                                        <label for="check1"
+                                            class="fs-5 fw-400 mb-0 text-capitalize cursor-pointer">tin</label>
+
+                                    </div>
+                                    <div class="d-flex align-items-center gap-4 position-relative">
+                                        <input type="checkbox" name="" class=" m-0 z-3 opacity-0" id="check2">
+                                        <span
+                                            class="spanCheck border position-absolute z-1 start-0 m-0 d-flex justify-content-center align-items-center bg-light"><i
+                                                class="bi bi-check"></i></span>
+                                        <label for="check2" class="fs-5 fw-400 mb-0 text-capitalize cursor-pointer">bird
+                                            cage
+                                            decor</label>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-4 position-relative">
+                                        <input type="checkbox" name="" class=" m-0 z-3 opacity-0" id="check3">
+                                        <span
+                                            class="spanCheck border position-absolute z-1 start-0 m-0 d-flex justify-content-center align-items-center bg-light"><i
+                                                class="bi bi-check"></i></span>
+                                        <label for="check3" class="fs-5 fw-400 mb-0 text-capitalize cursor-pointer">Wall
+                                            clock</label>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-4 position-relative">
+                                        <input type="checkbox" name="" class=" m-0 z-3 opacity-0" id="check4">
+                                        <span
+                                            class="spanCheck border position-absolute z-1 start-0 m-0 d-flex justify-content-center align-items-center bg-light"><i
+                                                class="bi bi-check"></i></span>
+                                        <label for="check4"
+                                            class="fs-5 fw-400 mb-0 text-capitalize cursor-pointer">planter</label>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-4 position-relative">
+                                        <input type="checkbox" name="" class=" m-0 z-3 opacity-0" id="check5">
+                                        <span
+                                            class="spanCheck border position-absolute z-1 start-0 m-0 d-flex justify-content-center align-items-center bg-light"><i
+                                                class="bi bi-check"></i></span>
+                                        <label for="check5"
+                                            class="fs-5 fw-400 mb-0 text-capitalize cursor-pointer">candle
+                                            holder</label>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-4 position-relative">
+                                        <input type="checkbox" name="" class=" m-0 z-3 opacity-0" id="check6">
+                                        <span
+                                            class="spanCheck border position-absolute z-1 start-0 m-0 d-flex justify-content-center align-items-center bg-light"><i
+                                                class="bi bi-check"></i></span>
+                                        <label for="check6" class="fs-5 fw-400 mb-0 text-capitalize cursor-pointer">cake
+                                            stand</label>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-4 position-relative">
+                                        <input type="checkbox" name="" class=" m-0 z-3 opacity-0" id="check7">
+                                        <span
+                                            class="spanCheck border position-absolute z-1 start-0 m-0 d-flex justify-content-center align-items-center bg-light"><i
+                                                class="bi bi-check"></i></span>
+                                        <label for="check7"
+                                            class="fs-5 fw-400 mb-0 text-capitalize cursor-pointer">pillow
+                                            cover</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -336,16 +354,13 @@
 
                         <div class=" bg-white position-absolute shortDroupdown h-100% w-100 z-3  border shordropdown"
                             id="shordropdown">
-                            <li class="nav-link px-3 py-2 gray-hover"><a href=""
-                                    class="nav-link text-capitalize">recomonded</a></li>
-                            <li class="nav-link px-3 py-2 gray-hover"><a href="" class="nav-link text-capitalize">what's
-                                    new</a></li>
-                            <li class="nav-link px-3 py-2 gray-hover"><a href=""
-                                    class="nav-link text-capitalize">popularity</a></li>
-                            <li class="nav-link px-3 py-2 gray-hover"><a href="" class="nav-link text-capitalize">better
-                                    discound</a></li>
-                            <li class="nav-link px-3 py-2 gray-hover"><a href=""
-                                    class="nav-link text-capitalize">customer rating</a></li>
+                            <li class="nav-link px-3 py-2 gray-hover">recomonded</li>
+                            <li class="nav-link px-3 py-2 gray-hover">what's
+                                new</li>
+                            <li class="nav-link px-3 py-2 gray-hover">popularity</li>
+                            <li class="nav-link px-3 py-2 gray-hover">better
+                                discound</li>
+                            <li class="nav-link px-3 py-2 gray-hover">customer rating</li>
                         </div>
 
                     </div>
@@ -372,11 +387,12 @@
                     </div>
 
                 </div>
-                <div class=" row justify-content-between px-xxl-5 px-lg-3 px-2 mt-4">
+                <div class=" row justify-content-between px-xxl-3 px-lg-3 px-xxl-2 mt-4">
                     <div class="col-xl-4 col-6 d-flex justify-center align-items-center px-0">
                         <div class=" carousel-card bg-light  position-relative mt-3 mx-auto">
                             <div class="carouselCard_img m-auto">
-                                <img src="/assets/imges/img/img-1.png" alt="" class="img-cover">
+                                <img src="https://png.pngtree.com/png-vector/20230214/ourmid/pngtree-watch-dial-clipart-in-transparent-background-png-image_6575785.png"
+                                    alt="" class="img-contain">
                                 <div class="lh-1 ps-3 py-2">
                                     <p class="text-uppercase text-secondary mb-0 fs-5">hadaaya tin</p>
                                     <p class="fw-bold fs-6 pt-md-2"><span class="">$</span>29.99</p>
@@ -391,7 +407,7 @@
                     <div class="col-xl-4 col-6 d-flex justify-center align-items-center px-0">
                         <div class=" carousel-card bg-light  position-relative mt-3 mx-auto">
                             <div class="carouselCard_img m-auto">
-                                <img src="/assets/imges/img/img-1.png" alt="" class="img-cover">
+                                <img src="/assets/imges/img/img-1.png" alt="" class="img-contain">
                                 <div class="lh-1 ps-3 py-2">
                                     <p class="text-uppercase text-secondary mb-0 fs-5">hadaaya tin</p>
                                     <p class="fw-bold fs-6 pt-md-2"><span class="">$</span>29.99</p>
@@ -406,7 +422,7 @@
                     <div class="col-xl-4 col-6 d-flex justify-center align-items-center px-0">
                         <div class=" carousel-card bg-light  position-relative mt-3 mx-auto">
                             <div class="carouselCard_img m-auto">
-                                <img src="/assets/imges/img/img-1.png" alt="" class="img-cover">
+                                <img src="/assets/imges/img/img-1.png" alt="" class="img-contain">
                                 <div class="lh-1 ps-3 py-2">
                                     <p class="text-uppercase text-secondary mb-0 fs-5">hadaaya tin</p>
                                     <p class="fw-bold fs-6 pt-md-2"><span class="">$</span>29.99</p>
@@ -421,7 +437,7 @@
                     <div class="col-xl-4 col-6 d-flex justify-center align-items-center px-0">
                         <div class=" carousel-card bg-light  position-relative mt-3 mx-auto">
                             <div class="carouselCard_img m-auto">
-                                <img src="/assets/imges/img/img-1.png" alt="" class="img-cover">
+                                <img src="/assets/imges/img/img-1.png" alt="" class="img-contain">
                                 <div class="lh-1 ps-3 py-2">
                                     <p class="text-uppercase text-secondary mb-0 fs-5">hadaaya tin</p>
                                     <p class="fw-bold fs-6 pt-md-2"><span class="">$</span>29.99</p>
@@ -436,7 +452,7 @@
                     <div class="col-xl-4 col-6 d-flex justify-center align-items-center px-0">
                         <div class=" carousel-card bg-light  position-relative mt-3 mx-auto">
                             <div class="carouselCard_img m-auto">
-                                <img src="/assets/imges/img/img-1.png" alt="" class="img-cover">
+                                <img src="/assets/imges/img/img-1.png" alt="" class="img-contain">
                                 <div class="lh-1 ps-3 py-2">
                                     <p class="text-uppercase text-secondary mb-0 fs-5">hadaaya tin</p>
                                     <p class="fw-bold fs-6 pt-md-2"><span class="">$</span>29.99</p>
@@ -451,7 +467,7 @@
                     <div class="col-xl-4 col-6 d-flex justify-center align-items-center px-0">
                         <div class=" carousel-card bg-light  position-relative mt-3 mx-auto">
                             <div class="carouselCard_img m-auto">
-                                <img src="/assets/imges/img/img-1.png" alt="" class="img-cover">
+                                <img src="/assets/imges/img/img-1.png" alt="" class="img-contain">
                                 <div class="lh-1 ps-3 py-2">
                                     <p class="text-uppercase text-secondary mb-0 fs-5">hadaaya tin</p>
                                     <p class="fw-bold fs-6 pt-md-2"><span class="">$</span>29.99</p>
@@ -466,7 +482,7 @@
                     <div class="col-xl-4 col-6 d-flex justify-center align-items-center px-0">
                         <div class=" carousel-card bg-light  position-relative mt-3 mx-auto">
                             <div class="carouselCard_img m-auto">
-                                <img src="/assets/imges/img/img-1.png" alt="" class="img-cover">
+                                <img src="/assets/imges/img/img-1.png" alt="" class="img-contain">
                                 <div class="lh-1 ps-3 py-2">
                                     <p class="text-uppercase text-secondary mb-0 fs-5">hadaaya tin</p>
                                     <p class="fw-bold fs-6 pt-md-2"><span class="">$</span>29.99</p>
@@ -481,7 +497,7 @@
                     <div class="col-xl-4 col-6 d-flex justify-center align-items-center px-0">
                         <div class=" carousel-card bg-light  position-relative mt-3 mx-auto">
                             <div class="carouselCard_img m-auto">
-                                <img src="/assets/imges/img/img-1.png" alt="" class="img-cover">
+                                <img src="/assets/imges/img/img-1.png" alt="" class="img-contain">
                                 <div class="lh-1 ps-3 py-2">
                                     <p class="text-uppercase text-secondary mb-0 fs-5">hadaaya tin</p>
                                     <p class="fw-bold fs-6 pt-md-2"><span class="">$</span>29.99</p>
@@ -496,7 +512,7 @@
                     <div class="col-xl-4 col-6 d-flex justify-center align-items-center px-0">
                         <div class=" carousel-card bg-light  position-relative mt-3 mx-auto">
                             <div class="carouselCard_img m-auto">
-                                <img src="/assets/imges/img/img-1.png" alt="" class="img-cover">
+                                <img src="/assets/imges/img/img-1.png" alt="" class="img-contain">
                                 <div class="lh-1 ps-3 py-2">
                                     <p class="text-uppercase text-secondary mb-0 fs-5">hadaaya tin</p>
                                     <p class="fw-bold fs-6 pt-md-2"><span class="">$</span>29.99</p>
@@ -512,11 +528,10 @@
                 <div class="d-flex justify-content-center align-items-center mt-5">
                     <div
                         class="bg-light-secondary rounded-pill  justify-content-between align-items-center col-xl-5 col-lg-7 col-md-7 col-11">
-                        <!-- <button class=""><i class="bi bi-arrow-left"></i></button> -->
-                        <nav class="">
+                        <!-- <nav class="">
                             <ul class="d-flex justify-content-between align-items-center my-2 px-3">
-                                <li class="nav-link"><a href="" class="nav-link"><i
-                                            class="bi bi-arrow-left fs-5"></i></a></li>
+                               
+                                <button class="bg-transparent border-0 fs-10">Previous</button>
                                 <span class="d-flex align-items-center gap-1">
                                     <li class="nav-link ">
                                         <a href=""
@@ -546,10 +561,69 @@
                                         <a href="" class="nav-link text-secondary">....</a></i>
                                     </li>
                                 </span>
-                                <li class="nav-link"><a href="" class="nav-link"><i
-                                            class="bi bi-arrow-right fs-5"></i></a></li>
+                                <button class="bg-transparent border-0 fs-10">Next</button>
+                               
                             </ul>
-                        </nav>
+
+                        </nav> -->
+
+
+                        <div
+                            class=" px-3 rounded-pill bg-light d-flex justify-content-between align-items-center px-2 py-2">
+                            <button class="border-0 bg-transparent pre-btn"><i
+                                    class="bi bi-arrow-left fs-4"></i></button>
+                            <!-- <div class="d-flex gap-3 truncate" id="paginationContainer">
+                                <li class="nav-link pagination"><a href="#" onclick="toggleActive(this)"
+                                        class="nav-link d-flex justify-content-center align-items-center pagination-active">1</a>
+                                </li>
+                                <li class="nav-link pagination"><a href="#" onclick="toggleActive(this)"
+                                        class="nav-link d-flex justify-content-center align-items-center ">2</a></li>
+                                <li class="nav-link pagination"><a href="#" onclick="toggleActive(this)"
+                                        class="nav-link d-flex justify-content-center align-items-center ">3</a></li>
+                                <li class="nav-link pagination"><a href="#" onclick="toggleActive(this)"
+                                        class="nav-link d-flex justify-content-center align-items-center ">4</a></li>
+                                <li class="nav-link pagination"><a href="#" onclick="toggleActive(this)"
+                                        class="nav-link d-flex justify-content-center align-items-center ">5</a></li>
+                                <li class="nav-link pagination"><a href="#" onclick="toggleActive(this)"
+                                        class="nav-link d-flex justify-content-center align-items-center ">6</a></li>
+                                <li class="nav-link pagination"><a href="#" onclick="toggleActive(this)"
+                                        class="nav-link d-flex justify-content-center align-items-center ">7</a></li>
+                                <li class="nav-link pagination"><a href="#" onclick="toggleActive(this)"
+                                        class="nav-link d-flex justify-content-center align-items-center ">8</a></li>
+                                <li class="nav-link pagination"><a href="#" onclick="toggleActive(this)"
+                                        class="nav-link d-flex justify-content-center align-items-center ">9</a></li>
+                                <li class="nav-link pagination"><a href="#" onclick="toggleActive(this)"
+                                        class="nav-link d-flex justify-content-center align-items-center ">10</a></li>
+                                <li class="nav-link pagination"><a href="#" onclick="toggleActive(this)"
+                                        class="nav-link d-flex justify-content-center align-items-center ">11</a></li>
+                                <li class="nav-link pagination"><a href="#" onclick="toggleActive(this)"
+                                        class="nav-link d-flex justify-content-center align-items-center ">12</a></li>
+
+                            </div> -->
+
+                            <div class=" owl-carousel owl-theme truncate" id="paginationContainer">
+                                <li class="item nav-link pagination">
+                                    <a href="#" onclick="toggleActive(this)"
+                                        class="nav-link d-flex justify-content-center align-items-center pagination-active">1</a>
+                                </li>
+                                <li class="item nav-link pagination"><a href="#" onclick="toggleActive(this)"
+                                        class="nav-link d-flex justify-content-center align-items-center ">2</a></li>
+                                <li class="item nav-link pagination"><a href="#" onclick="toggleActive(this)"
+                                        class="nav-link d-flex justify-content-center align-items-center ">3</a></li>
+                                <li class="item nav-link pagination"><a href="#" onclick="toggleActive(this)"
+                                        class="nav-link d-flex justify-content-center align-items-center ">4</a></li>
+                                <li class="item nav-link pagination"><a href="#" onclick="toggleActive(this)"
+                                        class="nav-link d-flex justify-content-center align-items-center ">5</a></li>
+                                <li class="item nav-link pagination"><a href="#" onclick="toggleActive(this)"
+                                        class="nav-link d-flex justify-content-center align-items-center ">6</a></li>
+                                <li class="item nav-link pagination"><a href="#" onclick="toggleActive(this)"
+                                        class="nav-link d-flex justify-content-center align-items-center ">7</a></li>
+                            </div>
+
+
+                            <button class="border-0 bg-transparent next-btn"><i
+                                    class="bi bi-arrow-right fs-4"></i></button>
+                        </div>
 
                     </div>
                 </div>
@@ -670,6 +744,60 @@
             percent2 = (sliderTwo.value / sliderMaxValue) * 100;
             sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #AA8117 ${percent1}% , #AA8117 ${percent2}%, #dadae5 ${percent2}%)`;
         }
+
+
+
+        // pagination 
+        function toggleActive(link) {
+            var links = document.querySelectorAll('.nav-link.pagination a');
+            links.forEach(function (el) {
+                el.classList.remove('pagination-active');
+            });
+            link.classList.add('pagination-active');
+        }
+
+        var currentPage = 1;
+        var totalPages = 7; // Total number of pages
+
+        document.querySelector('.next-btn').addEventListener('click', function () {
+            if (currentPage < totalPages) {
+                currentPage++;
+                updatePagination(currentPage);
+            }
+        });
+
+        document.querySelector('.pre-btn').addEventListener('click', function () {
+            if (currentPage > 1) {
+                currentPage--;
+                updatePagination(currentPage);
+            }
+        });
+
+        function updatePagination(currentPage) {
+            var activeLink = document.querySelector('.pagination-active');
+            activeLink.classList.remove('pagination-active');
+            var links = document.querySelectorAll('.nav-link.pagination a');
+            links[currentPage - 1].classList.add('pagination-active');
+        }
+
+        $('#paginationContainer').owlCarousel({
+            autoWidth: true,
+            margin: 15,
+            loop: false,
+            dots: false,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
     </script>
 
 </body>
