@@ -363,12 +363,6 @@ input[type="radio"].stock {
     /* color: white; */
 }
 
-/* input[type="radio"]:checked {
-    background: #AA8117;
-    width: 20px;
-    height: 20px;
-    position: relative;
-} */
 
 input[type="radio"]:checked+span {
     background: #AA8117;
@@ -404,11 +398,9 @@ span .stock {
 
 input[type="checkbox"]+span {
     cursor: pointer;
-    /* opacity: 0; */
     border: 2px solid black;
     width: 20px;
     height: 20px;
-    /* background: #000; */
     color: rgba(255, 255, 255, 0);
 }
 
@@ -427,29 +419,12 @@ input[type="checkbox"]:checked+span {
     opacity: 100;
 }
 
-/* input[type="checkbox"]:checked+span+i {
-    color: white;
-}
-input[type="checkbox"]+span+i {
-    display: none !important;
-    color: white;
-    background: #000;
-} */
-
-
 .pagination-active {
     width: 25px;
     height: 25px;
     background: #AA8117;
     color: white !important;
     border-radius: 100%;
-    /* display: flex; */
-    /* justify-self: ce; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* align-self: center; */
-    /* align-content: center; */
-
 }
 
 .truncate {
@@ -794,7 +769,7 @@ input[type="radio"]:checked+.select {
 /********************* order page ******************** */
 .order-img {
     width: 198px;
-    height: 233.4px;
+    /* height: 233.4px; */
 }
 
 /********************* login ******************** */
@@ -947,7 +922,7 @@ input[type="radio"]:checked+.select {
     /********************* order page ******************** */
     .order-img {
         width: 198px;
-        height: 233.4px;
+        /* height: 233.4px; */
     }
 
     .top-sticky {
@@ -1056,7 +1031,7 @@ input[type="radio"]:checked+.select {
     /********************* order page ******************** */
     .order-img {
         width: auto;
-        height: 100px;
+        /* height: 100px; */
     }
 
     .footerNav {

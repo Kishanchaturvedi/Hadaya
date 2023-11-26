@@ -69,7 +69,6 @@ $(document).ready(function () {
 $(document).ready(function () {
     $('#carousel-perspective').owlCarousel({
         // loop: true,
-        autoWidth: true,
         margin: 15,
         rtl: true,
         loop: true,
@@ -78,6 +77,7 @@ $(document).ready(function () {
         autoplayTimeout: 3000,
         autoplaySpeed: 3000,
         autoplayHoverPause: false,
+        autoWidth: true,
         dots: false,
         nav: false,
         responsive: {
@@ -115,6 +115,7 @@ $('#owl-carousel4').owlCarousel({
         }
     }
 })
+
 
 // pdp carousel 
 $(document).ready(function () {
