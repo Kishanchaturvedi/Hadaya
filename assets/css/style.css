@@ -390,8 +390,8 @@ span .stock {
 }
 
 .spanCheck {
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
     cursor: pointer;
 
 }
@@ -399,15 +399,15 @@ span .stock {
 input[type="checkbox"]+span {
     cursor: pointer;
     border: 2px solid black;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     color: rgba(255, 255, 255, 0);
 }
 
 input[type="checkbox"]:checked+span {
     background-color: #AA8117 !important;
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
     cursor: default;
     appearance: auto;
     box-sizing: border-box;
@@ -453,8 +453,8 @@ input[type="checkbox"]:checked+span {
 
 
 
-/* accordion  */
-.accordion {
+/* accordions  */
+.accordions {
     background-color: #eee;
     color: #444;
     cursor: pointer;
@@ -468,11 +468,11 @@ input[type="checkbox"]:checked+span {
 }
 
 .actives,
-.accordion:hover {
+.accordions:hover {
     background-color: #ccc;
 }
 
-.accordion:after {
+.accordions:after {
     content: '+';
     color: #777;
     float: right;
@@ -781,6 +781,41 @@ input[type="radio"]:checked+.select {
     top: -1rem;
 }
 
+/*************** order-detail page ************************************ */
+.accordion-button:focus {
+    box-shadow: none;
+}
+.h-110{
+    height: 90px;
+    width: 80px;
+}
+
+/* truncate  */
+.truncates {
+    display: block;
+    overflow: hidden;
+    max-height: 2rem;
+    /* Adjust this value to the desired height */
+    text-align: left;
+    /* You can adjust this as needed */
+    position: relative;
+}
+
+/* .truncates::before {
+    content: "...";
+    position: absolute;
+    bottom: 0;
+    right: 2px;
+    padding-left: 4px;
+    background-color: white;
+} */
+.h-90vh{
+    height: 90vh;
+}
+
+
+
+
 
 /****************** media query mobile responsive  ***********************/
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
@@ -914,7 +949,7 @@ input[type="radio"]:checked+.select {
     }
 
     .absolute-top {
-        bottom: 2.6rem;
+        /* bottom: 2.6rem; */
         /* width: 15rem; */
     }
 
