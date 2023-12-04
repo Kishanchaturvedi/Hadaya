@@ -434,7 +434,12 @@ input[type="checkbox"]:checked+span {
     text-overflow: ellipsis !important;
 }
 
-
+.hadayaName{
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis !important;
+}
 
 
 
@@ -720,18 +725,15 @@ input[type="radio"]:checked+.select {
 
 
 /************************* mobile account **************************** */
-.mobile-account {
+/* .mobile-account {
     z-index: 1500 !important;
     position: absolute;
     height: 100vh;
-}
+    background: #ececec;
+    width: 250px;
+} */
 
-.accountCloseBtn {
-    height: 50px;
-    width: 50px;
-    border-radius: 100%;
-    background: #e2e2e2;
-}
+
 
 .none {
     display: none;
@@ -769,7 +771,7 @@ input[type="radio"]:checked+.select {
 /********************* order page ******************** */
 .order-img {
     width: 198px;
-    /* height: 233.4px; */
+    height: 200px;
 }
 
 /********************* login ******************** */
@@ -948,10 +950,10 @@ input[type="radio"]:checked+.select {
 
     }
 
-    .absolute-top {
-        /* bottom: 2.6rem; */
-        /* width: 15rem; */
-    }
+    /* .absolute-top {
+        bottom: 2.6rem;
+        width: 15rem;
+    } */
 
 
     /********************* order page ******************** */
@@ -978,6 +980,27 @@ input[type="radio"]:checked+.select {
         width: auto;
     }
 
+
+    /*********************** tabss ******************************************** */
+
+    .side-accountNav{
+        position: absolute
+        ;
+        width: 100%;
+        background-color: #f4f4f4;
+        left: 0;
+        right: 0;
+        height: 100%;
+        z-index: 2000;
+        height: 100vh;
+    }
+    .accountCloseBtn {
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        background: #e2e2e2;
+        z-index: 2200;
+    }
 
 }
 

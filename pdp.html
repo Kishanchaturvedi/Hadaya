@@ -24,6 +24,7 @@
 </head>
 
 <body>
+  
     <header>
         <nav class=" top-0 w-100 px-5 mt-3 bg-white d-lg-block d-none">
             <div class="px-xl-5 px-2 py-3">
@@ -43,7 +44,7 @@
                                 src="/assets/imges/icon/logo.png" alt="" class="fs-20 "></a>
                     </div>
                     <div class="d-flex gap-3 me-2">
-                        <a href="overview.html" class=""><img src="assets/imges/icon/nav-profile.png" width="24" alt=""
+                        <a href="account.html" class=""><img src="assets/imges/icon/nav-profile.png" width="24" alt=""
                                 class=""></a>
                         <a href="" class=""><img src="assets/imges/icon/nav-bag.png" width="24" alt="" class=""></a>
                         <a href="" class=""><img src="assets/imges/icon/nav-heart.png" width="24" alt="" class=""></a>
@@ -84,7 +85,9 @@
                         <button class="border-0 bg-transparent text-dark-yellow" onclick="openBtn()"><i
                                 class="bi bi-list fs-3"></i></button>
                         <div class=" d-flex align-items-center gap-5">
-                            <img src="assets\imges\icon\nav-search.png" alt="" class=" top-0 mt-1 ms-1 nav_icon">
+                            <button class="border-0 bg-transparent text-dark-yellow" onclick="openBtn()">
+                                <img src="assets\imges\icon\nav-search.png" alt="" class=" top-0 mt-1 ms-1 nav_icon">
+                            </button>
 
                         </div>
                     </div>
@@ -93,8 +96,12 @@
                                 src="/assets/imges/icon/logo.png" alt="" class="fs-20 "></a>
                     </div>
                     <div class="d-flex gap-2 me-2">
-                        <a href="overview.html" class=""><img src="assets/imges/icon/nav-profile.png" alt=""
-                                class="nav_icon"></a>
+                       
+                        <button class="border-0 bg-transparent" onclick="accountBtn()">
+                            <a href="account.html" class=""><img src="assets/imges/icon/nav-profile.png"
+                                alt="" class="nav_icon"></a>
+                        </button>
+
                         <a href="" class=""><img src="assets/imges/icon/nav-bag.png" alt="" class="nav_icon"></a>
                         <a href="" class=""><img src="assets/imges/icon/nav-heart.png" alt="" class="nav_icon"></a>
                     </div>
@@ -103,7 +110,7 @@
 
             </div>
 
-            <div class=" h-100vh position-fixed top-0 end-0 start-0  bottom-0  bg-light  overflow-auto slider z-index10"
+            <div class=" h-100vh position-fixed top-0 end-0 start-0 bg-light bottom-0 overflow-auto slider z-index10"
                 id="my-slider">
                 <button class="position-absolute top-0 end-0 mt-4 me-2 btn border-0" onclick="closeBtn()"><i
                         class="bi bi-x-lg fs-4 text-dark-yellow fw-bold"></i></button>
@@ -137,6 +144,12 @@
             </div>
         </nav>
     </header>
+   
+
+
+
+
+
     <div class="container-xxl px-xxl-0 px-md-4  mt-4">
         <div class="d-lg-flex justify-content-between p-0 mx-0">
             <div class="col-lg-7">
@@ -278,6 +291,7 @@
                         <button class="border-dark_yellow bg-transparent"><i
                                 class="bi bi-heart fs-4 text-dark-yellow"></i></button>
                     </div>
+
                     <div class="d-flex gap-3 mt-3">
                         <button class="btn_yellow text-capitalize fs-5 fw-400">buy now</button>
                         <button class="btn-outline_yellow text-capitalize fs-5 fw-400 bg-transparent">add to
@@ -390,16 +404,7 @@
     <!--************* footer *********** -->
     <footer class="pt-5 bg-white ">
         <div class="container d-flex justify-content-center align-items-center flex-column">
-            <!-- <div class="col-xl-5 col-lg-7 col-md-9 col-12 px-md-4 px-2 text-center pt-4">
-                <h1 class="text-capitalize fw-600">Join our newsletter</h1>
-                <p class=" work-sans fs-5 text-uppercase lh-28">Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.</p>
-                <div class="d-flex border">
-                    <input type="email" class="w-100 border border-2 border-dark fs-4 px-2">
-                    <button class="border border-2 border-dark border-start-0 bg-transparent"><i
-                            class="bi bi-arrow-right fs-2 py-4 px-3"></i></button>
-                </div>
-            </div> -->
+           
             <div class=" col-12  footerImg-border mt-5">
                 <a href="" class="nav-link footerNav d-flex align-items-center"><img src="/assets/imges/icon/logo.png"
                         alt="" class="img-contain"></a>
@@ -447,6 +452,7 @@
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets\js\script.js"></script>
+    <script src="assets\js/owl-carousel.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>

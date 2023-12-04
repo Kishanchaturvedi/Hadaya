@@ -45,18 +45,23 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-.border-dashed{
+
+.border-dashed {
     border: 1px dashed black;
 }
-.cursor-pointer{
+
+.cursor-pointer {
     cursor: pointer;
 }
-.text-justify{
+
+.text-justify {
     text-align: justify;
 }
-.h-100vh{
+
+.h-100vh {
     height: 100vh;
 }
+
 .lh-17 {
     line-height: 17px;
 }
@@ -88,7 +93,8 @@
 .text-gray {
     color: #A1A1AA;
 }
-.text-white{
+
+.text-white {
     color: white !important;
 }
 
@@ -129,17 +135,20 @@
 .fw-700 {
     font-weight: 700;
 }
-.fs-11{
+
+.fs-11 {
     font-size: 11px;
 }
 
 .fs-12 {
     font-size: 12px;
 }
-.fs-14{
+
+.fs-14 {
     font-size: 14.32px;
 }
-.fs-17{
+
+.fs-17 {
     font-size: 17px;
 }
 
@@ -162,10 +171,12 @@
 .fs-18 {
     font-size: 18px;
 }
-.fs-20{
+
+.fs-20 {
     font-size: 20px;
 }
-.fs-23{
+
+.fs-23 {
     font-size: 23px;
 }
 
@@ -200,34 +211,37 @@
 .text-indent {
     text-indent: 50px;
 }
-.lh-30{
+
+.lh-30 {
     line-height: 30px;
+}
+
+button.btn.active {
+    color: #AA8117 !important;
 }
 
 
 /****************** media query mobile responsive  ***********************/
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
-@media (max-width: 1399.98px) {
+@media (max-width: 1399.98px) {}
 
- 
-}
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
     .fs-70 {
         font-size: 55px;
     }
- }
+}
 
 /* // `lg` applies to medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) { 
+@media (max-width: 991.98px) {
     .fs-70 {
         font-size: 40px;
     }
 }
 
 /* // `md` applies to small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) { 
-    .fs-23{
+@media (max-width: 767.98px) {
+    .fs-23 {
         font-size: 20px;
     }
 }
@@ -235,16 +249,17 @@
 
 
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) { 
-    .fs-23{
+@media (max-width: 575.98px) {
+    .fs-23 {
         font-size: 15px;
     }
-    .fs-20{
+
+    .fs-20 {
         font-size: 12px !important;
     }
+
     .fs-18 {
         font-size: 14px;
     }
 
 }
-
