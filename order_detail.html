@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hadaaya</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- bottstrap-icon  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- owl-carousel  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- style -->
+    <link rel="stylesheet" href="assets\css\style.css">
+    <link rel="stylesheet" href="assets\css\theme.css">
+</head>
+
+<body>
+    <header>
+        <nav class=" top-0 w-100 px-5 mt-3 bg-white d-lg-block d-none">
+            <div class="px-xl-5 px-2 py-3">
+                <div class="d-flex justify-content-between align-items-center border-yellow pb-4 position-relative">
+                    <div class="d-flex align-items-center gap-3">
+                        <!-- <button class="border-0 bg-transparent text-dark-yellow"><i
+                                class="bi bi-list fs-3"></i></button> -->
+                        <div class="position-relative d-flex align-items-center gap-5">
+                            <img src="assets\imges\icon\nav-search.png" alt="" width="24"
+                                class="position-absolute top-0 mt-1 ms-1">
+                            <input type="search" name="" placeholder="Search" id="inputNav-search"
+                                class="bg-transparent text-dark-yellow ps-4 ms-2 py-1 border-0 outline-none">
+                        </div>
+                    </div>
+                    <div class="position-relative d-flex justify-content-center me-5 pe-5">
+                        <a href="/" class="nav-link  navLogo bg-white px-xxl-4 px-3"><img
+                                src="/assets/imges/icon/logo.png" alt="" class="fs-20 "></a>
+                    </div>
+                    <div class="d-flex gap-3 me-2">
+                        <a href="account.html" class=""><img src="assets/imges/icon/nav-profile.png" width="24" alt=""
+                                class=""></a>
+                        <a href="" class=""><img src="assets/imges/icon/nav-bag.png" width="24" alt="" class=""></a>
+                        <a href="" class=""><img src="assets/imges/icon/nav-heart.png" width="24" alt="" class=""></a>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between mt-3">
+                    <div
+                        class="col-xxl-4 col-xl-5 col-6 d-flex justify-content-xl-between justify-content-between pe-xxl-0 pe-xl-5 pe-2">
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">new</a></li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">Birdcage
+                                decor</a>
+                        </li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">tins</a></li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">wall clocks</a>
+                        </li>
+                    </div>
+
+                    <div
+                        class="col-xxl-4 col-xl-5 col-6 d-flex align-items-center justify-content-end justify-content-between ps-xxl-0 ps-xl-5 ps-4">
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">cake stands</a>
+                        </li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">pillow cover</a>
+                        </li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">mirrors</a></li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">more</a></li>
+                    </div>
+
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- phone nav bar  -->
+        <nav class=" top-0 w-100 px-md-5 px-3 mt-3 bg-white d-lg-none d-block position-relative">
+            <div class="px-xl-5 px-2 pt-3 pb-md-3 pb-2">
+                <div class="d-flex justify-content-between align-items-center border-yellow pb-4 position-relative">
+                    <div class="d-flex align-items-center gap-2">
+                        <button class="border-0 bg-transparent text-dark-yellow" onclick="openBtn()"><i
+                                class="bi bi-list fs-3"></i></button>
+                        <div class=" d-flex align-items-center gap-5">
+                            <button class="border-0 bg-transparent text-dark-yellow" onclick="openBtn()">
+                                <img src="assets\imges\icon\nav-search.png" alt="" class=" top-0 mt-1 ms-1 nav_icon">
+                            </button>
+
+                        </div>
+                    </div>
+                    <div class=" d-flex justify-content-center ">
+                        <a href="/" class="nav-link  navLogo bg-white px-xxl-4 px-2"><img
+                                src="/assets/imges/icon/logo.png" alt="" class="fs-20 "></a>
+                    </div>
+                    <div class="d-flex gap-2 me-2">
+
+                        <button class="border-0 bg-transparent" onclick="accountBtn()">
+                            <a href="account.html" class=""><img src="assets/imges/icon/nav-profile.png" alt=""
+                                    class="nav_icon"></a>
+                        </button>
+
+                        <a href="" class=""><img src="assets/imges/icon/nav-bag.png" alt="" class="nav_icon"></a>
+                        <a href="" class=""><img src="assets/imges/icon/nav-heart.png" alt="" class="nav_icon"></a>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+            <div class=" h-100vh position-fixed top-0 end-0 start-0 bg-light bottom-0 text-capitalize overflow-auto slider z-index10"
+                id="my-slider">
+                <button class="position-absolute top-0 end-0 mt-4 me-2 btn border-0" onclick="closeBtn()"><i
+                        class="bi bi-x-lg fs-4 text-dark-yellow fw-bold"></i></button>
+                <div class=" mt-3 text-center">
+                    <a href="/" class=""><img src="/assets/imges/icon/logo.png" height="50" alt="" class=""></a>
+
+                    <div class="position-relative d-flex align-items-center w-100 gap-5 my-4 px-2 border-bottom pb-2">
+                        <img src="assets\imges\icon\nav-search.png" alt="" width="24"
+                            class="position-absolute top-0 mt-1 ms-1 ">
+                        <input type="search" name="" placeholder="Search" id="inputNav-search"
+                            class="bg-transparent text-dark-yellow ps-4 ms-2 py-1 border-0 w-100  outline-none">
+                    </div>
+                </div>
+                <div class="overflow-auto">
+                    <div class="d-flex flex-column px-3 gap-4 overflow-scroll">
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">new</a></li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">Birdcage
+                                decor</a>
+                        </li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">tins</a></li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">wall clocks</a>
+                        </li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">cake stands</a>
+                        </li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">pillow cover</a>
+                        </li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">mirrors</a></li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">more</a></li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <div class=" mt-md-4 ">
+        <div class="d-flex justify-content-center align-items-center mt-4">
+
+            <div class=" col-xl-6 col-lg-9 col-12 overflow-hidden px-2 bg-white shadow-sm px-md-5 px-1 py-3 my-lg-5">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h3 class="text-dark-yellow text-capitalize">view order-details</h3>
+                    <div class="invoice-dropdown position-relative">
+                        <button class="border-0 bg-transparent invoice_btn">invoice <i
+                                class="bi bi-chevron-down"></i></button>
+                        <div class="invoice-list bg-light position-absolute end-0">
+                            <a href="" class="nav-link p-2">invoice 1 </a>
+                            <a href="" class="nav-link p-2">warranty</a>
+                            <a href="" class="nav-link p-2">order-summary</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="border rounded p-3">
+                    <div class="d-flex justify-content-between">
+                        <p class="m-0 text-capitalize">order date</p>
+                        <p class="m-0 text-capitalize">14-nov-2023</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p class="m-0 text-capitalize">order#</p>
+                        <p class="m-0 text-capitalize">545-5875-58752
+                        </p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p class="m-0 text-capitalize">order total</p>
+                        <p class="m-0 text-capitalize">647.00 <span class="">(1 item)</span></p>
+                    </div>
+                </div>
+                <h3 class="text-dark-yellow  text-capitalize mt-3 mb-2">shipment details</h3>
+                <div class="border rounded p-3">
+                    <div class="">
+                        <p class="m-0 text-capitalize text-capitalize border-bottom fs-14 ">tow day delivery Lorem ipsum
+                            dolor sit amet
+                            consectetur adipisicing elit. Voluptatem saepe tempore
+                            illo officiis, </p>
+                        <h5 class="fw-600 text-capitalize my-3">delivered</h5>
+                        <div class="d-flex justify-content-between">
+                            <div class="delivered-img col-3">
+                                <img src="/assets/imges/img/img-1.png" alt="" class="img-cover">
+                            </div>
+                            <div class="col-7 d-flex justify-content-between flex-column px-2">
+                                <p class="fw-600 fs-14 text-capitalize lh-17 truncate_para">Lorem ipsum dolor sit amet
+                                    consectetur
+                                    adipisicing elit. Praesentium commodi
+                                    tempora.</p>
+                                <p class="m-0 text-capitalize fw-500 text-secondary">qty : <span class="">1</span></p>
+                            </div>
+                            <div class="col-2">
+                                <p class="fw-500 text-capitalize">745.00</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="d-lg-flex border rounded p-3 mt-3">
+                    <div class="col-lg-6 gap-lg-0 gap-5">
+                        <h5 class="text-capitalize fw-600">Shipping Address</h5>
+                        <p class="m-0 fs-14 text-capitalize">Raman Mishra</p>
+                        <p class="m-0 fs-14 text-capitalize">R.P. Singh House 1st Floor</p>
+                        <p class="m-0 fs-14 text-capitalize">Rai Colony Miyanpur</p>
+                        <p class="m-0 fs-14 text-capitalize">JAUNPUR, UTTAR PRADESH 222002</p>
+                        <p class="m-0 fs-14 text-capitalize">India</p>
+                    </div>
+                    <div class="col-lg-6 gap-lg-0 gap-5">
+                        <h5 class="text-capitalize fw-600">Order Summary</h5>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="m-0 fs-14 text-capitalize">Subtotal:</p>
+                            <p class="m-0 fs-14 text-capitalize"><span class="">₹</span>377.00</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="m-0 fs-14 text-capitalize">Shipping:</p>
+                            <p class="m-0 fs-14 text-capitalize"><span class="">₹</span>0.00</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="m-0 fs-14 text-capitalize">total:</p>
+                            <p class="m-0 fs-14 text-capitalize"><span class="">₹</span>377.00</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center border-top">
+                            <p class="m-0 fs-14 text-capitalize fw-600">total:</p>
+                            <p class="m-0 fs-14 text-capitalize fw-600"><span class="">₹</span>377.00</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="container">
+        <section class=" mt-5 px-md-3">
+            <h3 class="work-sans fw-400 text-capitalize pb-3 pt-3 fw-600">Products related to your order</h3>
+            <div class="owl-carousel owl-theme d-flex justify-content-center align-items-center gap-2 ps-md-0 ps-2"
+                id="carouselCard-3">
+                <a href="" class="nav-link item mx-auto">
+                    <div class="mx-auto carousel-card m-auto bg-light w-auto position-relative">
+                        <div class="carouselCard_img m-auto">
+                            <img src="/assets/imges/img/img-1.png" alt="" class="img-contain">
+                            <div class="lh-1 ps-3 py-2">
+                                <p class="text-uppercase text-secondary mb-0 fs-3">hadaaya tin</p>
+                                <p class="fw-bold"><span class="">$</span>29.99</p>
+                            </div>
+                        </div>
+                        <div class="position-absolute top-0 end-0 m-3">
+                            <button class="bg-transparent border-0"><i
+                                    class="bi bi-heart-fill text-white fs-4"></i></button>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="nav-link item mx-auto">
+                    <div class="mx-auto carousel-card m-auto bg-light w-auto position-relative">
+                        <div class="carouselCard_img m-auto">
+                            <img src="/assets/imges/img/img-2.png" alt="" class="img-contain">
+                            <div class="lh-1 ps-3 py-2">
+                                <p class="text-uppercase text-secondary mb-0 fs-3">hadaaya tin</p>
+                                <p class="fw-bold"><span class="">$</span>29.99</p>
+                            </div>
+                        </div>
+                        <div class="position-absolute top-0 end-0 m-3">
+                            <button class="bg-transparent border-0"><i
+                                    class="bi bi-heart-fill text-white fs-4"></i></button>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="nav-link item mx-auto">
+                    <div class="mx-auto carousel-card m-auto bg-light w-auto position-relative">
+                        <div class="carouselCard_img m-auto">
+                            <img src="/assets/imges/img/img-3.png" alt="" class="img-contain">
+                            <div class="lh-1 ps-3 py-2">
+                                <p class="text-uppercase text-secondary mb-0 fs-3">hadaaya tin</p>
+                                <p class="fw-bold"><span class="">$</span>29.99</p>
+                            </div>
+                        </div>
+                        <div class="position-absolute top-0 end-0 m-3">
+                            <button class="bg-transparent border-0"><i
+                                    class="bi bi-heart-fill text-white fs-4"></i></button>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="nav-link item mx-auto">
+                    <div class="mx-auto carousel-card m-auto bg-light w-auto position-relative">
+                        <div class="carouselCard_img m-auto">
+                            <img src="/assets/imges/img/img-1.png" alt="" class="img-contain">
+                            <div class="lh-1 ps-3 py-2">
+                                <p class="text-uppercase text-secondary mb-0 fs-3">hadaaya tin</p>
+                                <p class="fw-bold"><span class="">$</span>29.99</p>
+                            </div>
+                        </div>
+                        <div class="position-absolute top-0 end-0 m-3">
+                            <button class="bg-transparent border-0"><i
+                                    class="bi bi-heart-fill text-white fs-4"></i></button>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="nav-link item mx-auto">
+                    <div class="mx-auto carousel-card m-auto bg-light w-auto position-relative">
+                        <div class="carouselCard_img m-auto">
+                            <img src="data:image/jpeg;base64,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"
+                                alt="" class="img-contain">
+                            <div class="lh-1 ps-3 py-2">
+                                <p class="text-uppercase text-secondary mb-0 fs-3">hadaaya tin</p>
+                                <p class="fw-bold"><span class="">$</span>29.99</p>
+                            </div>
+                        </div>
+                        <div class="position-absolute top-0 end-0 m-3">
+                            <button class="bg-transparent border-0"><i
+                                    class="bi bi-heart-fill text-white fs-4"></i></button>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+    </div>
+
+
+    <!--************* footer *********** -->
+    <footer class="pt-5 bg-white ">
+        <div class="container d-flex justify-content-center align-items-center flex-column">
+
+            <div class=" col-12  footerImg-border mt-5">
+                <a href="" class="nav-link footerNav d-flex align-items-center"><img src="/assets/imges/icon/logo.png"
+                        alt="" class="img-contain"></a>
+            </div>
+            <div class="col-12 py-5">
+                <div class="d-flex justify-content-center align-items-center flex-wrap gap-xl-5 gap-4 lh-1">
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-capitalize text-dark">about
+                        us</a>
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-capitalize text-dark">contact
+                        us</a>
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-capitalize text-dark">blog</a>
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-capitalize text-dark">return
+                        policy</a>
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-capitalize text-dark">terms &
+                        conditions</a>
+                    <a href=""
+                        class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-capitalize text-dark">order-status</a>
+                </div>
+                <div class="d-flex justify-content-center flex-wrap mt-md-3 mt-5 gap-xl-5 gap-4 lh-1">
+                    <a href="" class=""><img src="/assets/imges/icon/PayPal - png.png" alt="" height="19" class=""></a>
+                    <a href="" class=""><img src="/assets/imges/icon/Mastercard - png.png" alt="" height="19"
+                            class=""></a>
+                    <a href="" class=""><img src="/assets/imges/icon/RuPay - png.png" alt="" height="19" class=""></a>
+                    <a href="" class=""><img src="/assets/imges/icon/Paytm - png.png" alt="" height="19" class=""></a>
+                    <a href="" class=""><img src="/assets/imges/icon/Visa Inc. - png.png" alt="" height="19"
+                            class=""></a>
+                </div>
+            </div>
+            <p class="text-gray fs-10 text-center text-uppercase ">© Copyright 2023, hOUSE OF HADAAYA.inc</p>
+        </div>
+    </footer>
+
+
+
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- owl-carousel  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets\js\script.js"></script>
+    <script src="assets\js/owl-carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

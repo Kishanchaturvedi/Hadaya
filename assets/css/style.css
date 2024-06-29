@@ -648,8 +648,8 @@ input[type="range"]::-webkit-slider-thumb {
 
 
 #carouselCard-3 .owl-prev {
-    height: 4rem;
-    width: 4rem;
+    height: 3.4rem;
+    width: 3.4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -660,13 +660,13 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: 28px;
     position: absolute;
     top: 40%;
-    left: -2.3rem;
+    left: -1rem;
     transition: .5s;
 }
 
 #carouselCard-3 .owl-next {
-    height: 4rem;
-    width: 4rem;
+    height: 3.4rem;
+    width: 3.4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -677,7 +677,7 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: 28px;
     position: absolute;
     top: 40%;
-    right: -2.3rem;
+    right: -1rem;
     transition: .5s;
 }
 
@@ -692,6 +692,54 @@ input[type="range"]::-webkit-slider-thumb {
     color: white;
 
 }
+
+#carouselCard-5 .owl-prev {
+    height: 3.4rem;
+    width: 3.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    backdrop-filter: blur(7px);
+    background: #d9d9d967;
+    color: white;
+    font-size: 28px;
+    position: absolute;
+    top: 40%;
+    left: -1rem;
+    transition: .5s;
+}
+
+#carouselCard-5 .owl-next {
+    height: 3.4rem;
+    width: 3.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    backdrop-filter: blur(7px);
+    background: #d9d9d967;
+    color: white;
+    font-size: 28px;
+    position: absolute;
+    top: 40%;
+    right: -1rem;
+    transition: .5s;
+}
+
+#carouselCard-5 .owl-prev:hover {
+    background: #AA8117;
+    color: white;
+
+}
+
+#carouselCard-5 .owl-next:hover {
+    background: #AA8117;
+    color: white;
+
+}
+
+
 
 input[type="radio"]+.select {
     height: 30px;
@@ -784,37 +832,54 @@ input[type="radio"]:checked+.select {
 }
 
 /*************** order-detail page ************************************ */
-.accordion-button:focus {
-    box-shadow: none;
-}
+
 .h-110{
-    height: 90px;
+    height: 100px;
     width: 80px;
 }
 
 /* truncate  */
 .truncates {
+    width: 250px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+}
+.truncate_para{
     display: block;
     overflow: hidden;
-    max-height: 2rem;
-    /* Adjust this value to the desired height */
+    max-height: 3rem;
     text-align: left;
-    /* You can adjust this as needed */
     position: relative;
 }
 
-/* .truncates::before {
-    content: "...";
-    position: absolute;
-    bottom: 0;
-    right: 2px;
-    padding-left: 4px;
-    background-color: white;
-} */
+/* truncate  */
+.truncates {
+    width: 250px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.delivered-img{
+    height: 100px;
+    width: 100px !important;
+}
+
 .h-90vh{
     height: 90vh;
 }
+.invoice-dropdown:hover .invoice-list{
+display: block;
+}
+.invoice-list{
+    width: 180px;
+    display: none;
+}
+.invoice-list a:hover{
+    background: #ebebeb;
 
+}
 
 
 
@@ -1095,6 +1160,10 @@ input[type="radio"]:checked+.select {
     .footerNav {
         height: 50.25px;
         width: auto;
+    }
+    .h-110{
+        height: 100px;
+        width: 70px;
     }
 }
 

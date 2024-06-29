@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hadaaya</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- bottstrap-icon  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- owl-carousel  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- style -->
+    <link rel="stylesheet" href="assets\css\style.css">
+    <link rel="stylesheet" href="assets\css\theme.css">
+</head>
+
+<body>
+    <header>
+        <nav class=" top-0 w-100 px-5 mt-3 bg-white d-lg-block d-none">
+            <div class="px-xl-5 px-2 py-3">
+                <div class="d-flex justify-content-between align-items-center border-yellow pb-4 position-relative">
+                    <div class="d-flex align-items-center gap-3">
+                        <!-- <button class="border-0 bg-transparent text-dark-yellow"><i
+                                class="bi bi-list fs-3"></i></button> -->
+                        <div class="position-relative d-flex align-items-center gap-5">
+                            <img src="assets\imges\icon\nav-search.png" alt="" width="24"
+                                class="position-absolute top-0 mt-1 ms-1">
+                            <input type="search" name="" placeholder="Search" id="inputNav-search"
+                                class="bg-transparent text-dark-yellow ps-4 ms-2 py-1 border-0 outline-none">
+                        </div>
+                    </div>
+                    <div class="position-relative d-flex justify-content-center me-5 pe-5">
+                        <a href="/" class="nav-link  navLogo bg-white px-xxl-4 px-3"><img
+                                src="/assets/imges/icon/logo.png" alt="" class="fs-20 "></a>
+                    </div>
+                    <div class="d-flex gap-3 me-2">
+                        <a href="account.html" class=""><img src="assets/imges/icon/nav-profile.png" width="24" alt=""
+                                class=""></a>
+                        <a href="" class=""><img src="assets/imges/icon/nav-bag.png" width="24" alt="" class=""></a>
+                        <a href="" class=""><img src="assets/imges/icon/nav-heart.png" width="24" alt="" class=""></a>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between mt-3">
+                    <div
+                        class="col-xxl-4 col-xl-5 col-6 d-flex justify-content-xl-between justify-content-between pe-xxl-0 pe-xl-5 pe-2">
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">new</a></li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">Birdcage
+                                decor</a>
+                        </li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">tins</a></li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">wall clocks</a>
+                        </li>
+                    </div>
+
+                    <div
+                        class="col-xxl-4 col-xl-5 col-6 d-flex align-items-center justify-content-end justify-content-between ps-xxl-0 ps-xl-5 ps-4">
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">cake stands</a>
+                        </li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">pillow cover</a>
+                        </li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">mirrors</a></li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">more</a></li>
+                    </div>
+
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- phone nav bar  -->
+        <nav class=" top-0 w-100 px-md-5 px-3 mt-3 bg-white d-lg-none d-block position-relative">
+            <div class="px-xl-5 px-2 pt-3 pb-md-3 pb-2">
+                <div class="d-flex justify-content-between align-items-center border-yellow pb-4 position-relative">
+                    <div class="d-flex align-items-center gap-2">
+                        <button class="border-0 bg-transparent text-dark-yellow" onclick="openBtn()"><i
+                                class="bi bi-list fs-3"></i></button>
+                        <div class=" d-flex align-items-center gap-5">
+                            <button class="border-0 bg-transparent text-dark-yellow" onclick="openBtn()">
+                                <img src="assets\imges\icon\nav-search.png" alt="" class=" top-0 mt-1 ms-1 nav_icon">
+                            </button>
+
+                        </div>
+                    </div>
+                    <div class=" d-flex justify-content-center ">
+                        <a href="/" class="nav-link  navLogo bg-white px-xxl-4 px-2"><img
+                                src="/assets/imges/icon/logo.png" alt="" class="fs-20 "></a>
+                    </div>
+                    <div class="d-flex gap-2 me-2">
+
+                        <button class="border-0 bg-transparent" onclick="accountBtn()">
+                            <a href="account.html" class=""><img src="assets/imges/icon/nav-profile.png" alt=""
+                                    class="nav_icon"></a>
+                        </button>
+
+                        <a href="" class=""><img src="assets/imges/icon/nav-bag.png" alt="" class="nav_icon"></a>
+                        <a href="" class=""><img src="assets/imges/icon/nav-heart.png" alt="" class="nav_icon"></a>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+            <div class=" h-100vh position-fixed top-0 end-0 start-0 bg-light bottom-0 overflow-auto slider z-index10"
+                id="my-slider">
+                <button class="position-absolute top-0 end-0 mt-4 me-2 btn border-0" onclick="closeBtn()"><i
+                        class="bi bi-x-lg fs-4 text-dark-yellow fw-bold"></i></button>
+                <div class=" mt-3 text-center">
+                    <a href="/" class=""><img src="/assets/imges/icon/logo.png" height="50" alt="" class=""></a>
+
+                    <div class="position-relative d-flex align-items-center w-100 gap-5 my-4 px-2 border-bottom pb-2">
+                        <img src="assets\imges\icon\nav-search.png" alt="" width="24"
+                            class="position-absolute top-0 mt-1 ms-1 ">
+                        <input type="search" name="" placeholder="Search" id="inputNav-search"
+                            class="bg-transparent text-dark-yellow ps-4 ms-2 py-1 border-0 w-100  outline-none">
+                    </div>
+                </div>
+                <div class="overflow-auto">
+                    <div class="d-flex flex-column px-3 gap-4 overflow-scroll">
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">new</a></li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">Birdcage
+                                decor</a>
+                        </li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">tins</a></li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">wall clocks</a>
+                        </li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">cake stands</a>
+                        </li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">pillow cover</a>
+                        </li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">mirrors</a></li>
+                        <li class="nav-link"><a href="" class="nav-link text-gray fs-15 text-uppercase">more</a></li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <div class=" mt-md-4 bg-light">
+        <div class="d-flex justify-content-center align-items-center mt-4">
+
+            <div class="col-xl-5 col-lg-6 col-12 overflow-hidden px-2 bg-white shadow-sm px-md-5 px-1 py-3 my-md-5">
+                <div class="d-flex align-items-center justify-content-center my-4">
+                    <p
+                        class="col-md-8 col-10 d-flex align-items-center justify-content-center bg-dark-yellow border-0 text-white py-2">
+                        <i class="bi bi-check-circle px-1"></i>Out Place Succesfully
+                    </p>
+                </div>
+
+                <div class="d-flex gap-lg-1 gap-2 border-bottom pt-3 pb-2">
+                    <div class="col-xxl-2 col-xl-3 col-lg-2 col-md-2 col-2 px-0 h-110 ">
+                        <img src="/assets/imges/img/img-2.png" alt="" class="img-contain">
+                    </div>
+                    <div class="col-lg-8 col-8 ms-xl-0 ms-lg-3 d-flex flex-column justify-content-between">
+                        <p class="text-uppercase fs-12 truncates">Lorem Lorem ipsum dolor sit amet
+                            consectetur, adipisicing elit. Beatae, sint! Distinctio enim repudiandae
+                            
+                        </p>
+                        <div class="d-flex flex-column">
+                            <div class="d-flex">
+                                <p class="text-secondary m-0 fs-12 text-uppercase">qty :</p>
+                                <a href="" class="nav-link text-secondary fs-12 pt-0">1</a>
+                            </div>
+                            <div class="d-flex">
+                                <p class="text-secondary m-0 fs-12">Color :</p>
+                                <a href="" class="nav-link text-secondary fs-12 pt-0">red</a>
+                            </div>
+
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button
+                                class="text-capitalize border-0 border-bottom border-dark border-1 bg-transparent fs-12">edit</button>
+                            <button
+                                class="text-capitalize border-0 border-bottom border-dark border-1 bg-transparent fs-12">remove
+                                <i class="px-1 bi bi-x-circle-fill opacity-50 text-secondary"></i></button>
+                            <button
+                                class="text-capitalize border-0 border-bottom border-dark border-1 bg-transparent fs-12">move
+                                to wishlist <i class="px-1 bi bi-heart opacity-50 text-secondary"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-1 ms-sm-auto">
+                        <p class="fs-12">₹2,500</p>
+
+                    </div>
+
+                </div>
+
+                <div class="d-flex gap-lg-1 gap-2 border-bottom pt-3 pb-2">
+                    <div class="col-xxl-2 col-xl-3 col-lg-2 col-md-2 col-2 px-0 h-110 ">
+                        <img src="/assets/imges/img/img-2.png" alt="" class="img-contain">
+                    </div>
+                    <div class="col-lg-8 col-8 ms-xl-0 ms-lg-3 d-flex flex-column justify-content-between">
+                        <p class="text-uppercase fs-12 truncates">Lorem Lorem ipsum dolor sit amet
+                            consectetur, adipisicing elit. Beatae, sint! Distinctio enim repudiandae
+                            
+                        </p>
+                        <div class="d-flex flex-column">
+                            <div class="d-flex">
+                                <p class="text-secondary m-0 fs-12 text-uppercase">qty :</p>
+                                <a href="" class="nav-link text-secondary fs-12 pt-0">1</a>
+                            </div>
+                            <div class="d-flex">
+                                <p class="text-secondary m-0 fs-12">Color :</p>
+                                <a href="" class="nav-link text-secondary fs-12 pt-0">red</a>
+                            </div>
+
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button
+                                class="text-capitalize border-0 border-bottom border-dark border-1 bg-transparent fs-12">edit</button>
+                            <button
+                                class="text-capitalize border-0 border-bottom border-dark border-1 bg-transparent fs-12">remove
+                                <i class="px-1 bi bi-x-circle-fill opacity-50 text-secondary"></i></button>
+                            <button
+                                class="text-capitalize border-0 border-bottom border-dark border-1 bg-transparent fs-12">move
+                                to wishlist <i class="px-1 bi bi-heart opacity-50 text-secondary"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-1 ms-sm-auto">
+                        <p class="fs-12">₹2,500</p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="d-flex gap-lg-1 gap-2 border-bottom pt-3 pb-2">
+                    <div class="col-xxl-2 col-xl-3 col-lg-2 col-md-2 col-2 px-0 h-110 ">
+                        <img src="/assets/imges/img/img-2.png" alt="" class="img-contain">
+                    </div>
+                    <div class="col-lg-8 col-8 ms-xl-0 ms-lg-3 d-flex flex-column justify-content-between">
+                        <p class="text-uppercase fs-12 truncates">Lorem Lorem ipsum dolor sit amet
+                            consectetur, adipisicing elit. Beatae, sint! Distinctio enim repudiandae
+                            
+                        </p>
+                        <div class="d-flex flex-column">
+                            <div class="d-flex">
+                                <p class="text-secondary m-0 fs-12 text-uppercase">qty :</p>
+                                <a href="" class="nav-link text-secondary fs-12 pt-0">1</a>
+                            </div>
+                            <div class="d-flex">
+                                <p class="text-secondary m-0 fs-12">Color :</p>
+                                <a href="" class="nav-link text-secondary fs-12 pt-0">red</a>
+                            </div>
+
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button
+                                class="text-capitalize border-0 border-bottom border-dark border-1 bg-transparent fs-12">edit</button>
+                            <button
+                                class="text-capitalize border-0 border-bottom border-dark border-1 bg-transparent fs-12">remove
+                                <i class="px-1 bi bi-x-circle-fill opacity-50 text-secondary"></i></button>
+                            <button
+                                class="text-capitalize border-0 border-bottom border-dark border-1 bg-transparent fs-12">move
+                                to wishlist <i class="px-1 bi bi-heart opacity-50 text-secondary"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-1 ms-sm-auto">
+                        <p class="fs-12">₹2,500</p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="border-top border-dark border-2 w-50 m-auto my-4"></div>
+                <div class="d-flex justify-content-between align-items-center mb-4 mt-2">
+                    <p class="fs-6 text-uppercase m-0 fw-600">billing details</p>
+                    <a href="" class="nav-link text-dark fs-12 text-uppercase">EDIT</a>
+                </div>
+                <div class="pt-4 ps-lg-3">
+                    <div class="d-flex justify-content-between">
+                        <p class="mb-0 text-capitalize poppins fs-14 fw-400">Subtotal</p>
+                        <p class="mb-0 poppins fs-14 fw-500"><span class="">₹ </span>7,500</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p class="mb-0 text-capitalize poppins fs-14 fw-400">promocode discount</p>
+                        <p class="mb-0 poppins fs-14 fw-500">20%</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p class="mb-0 text-capitalize poppins fs-14 fw-400">total</p>
+                        <p class="mb-0 poppins fs-14 fw-500"><span
+                                class="text-secondary text-decoration-line-through px-2">₹7,500</span>₹5,500</p>
+                    </div>
+                    <div class="d-flex justify-content-between border-top border-2 mt-2 pt-2">
+                        <p class="mb-0 text-capitalize poppins fs-14 fw-600">Estimated total</p>
+                        <p class="mb-0 poppins fs-14 fw-600">₹5,500</p>
+                    </div>
+                </div>
+                <div class="border-top border-dark border-2 w-50 m-auto my-4"></div>
+
+                <div class="d-flex justify-content-between align-items-center mb-4 mt-2 px-1">
+                    <p class="fs-6 text-uppercase m-0 fw-600">shipping details</p>
+                    <a href="" class="nav-link text-dark fs-12">EDIT</a>
+                </div>
+                <form class="px-3">
+                    <div class="d-flex mb-3 justify-content-between align-items-center">
+                        <label for="" class="fs-12">Contry:</label>
+                        <input type="text" class="w-75 bg-light py-3 px-3 border-0 fst-italic outline-none"
+                            placeholder="" value="india">
+                    </div>
+                    <div class="d-flex mb-3 justify-content-between align-items-center">
+                        <label for="" class="fs-12">Address:</label>
+                        <input type="text" class="w-75 bg-light py-3 px-3 border-0 fst-italic outline-none"
+                            placeholder="" value="room no. 516,b wing, gold filed">
+                    </div>
+                    <div class="d-flex mb-3 justify-content-between align-items-center">
+                        <label for="" class="fs-12">Street:</label>
+                        <input type="text" class="w-75 bg-light py-3 px-3 border-0 fst-italic outline-none"
+                            placeholder="" value="sion bandra link road">
+                    </div>
+                    <div class="d-flex mb-3 justify-content-between align-items-center">
+                        <label for="" class="fs-12">City / Suburban:</label>
+                        <input type="text" class="w-75 bg-light py-3 px-3 border-0 fst-italic outline-none"
+                            placeholder="" value="mumbai">
+                    </div>
+                    <div class="d-flex mb-3 justify-content-between align-items-center">
+                        <label for="" class="fs-12">Pincode:</label>
+                        <input type="text" class="w-75 bg-light py-3 px-3 border-0 fst-italic outline-none"
+                            placeholder="" value="400022">
+                    </div>
+
+
+                    <div class="border-top border-dark border-2 w-50 m-auto my-4"></div>
+
+                    <div class="d-flex justify-content-between align-items-center mb-4 mt-2 px-1">
+                        <p class="fs-6 text-uppercase m-0 fw-600">payment method</p>
+                        <a href="" class="nav-link text-dark fs-12 fw-600">EDIT</a>
+                    </div>
+                    <div class="d-flex mb-3 justify-content-between align-items-center">
+                        <label for="" class="fs-12"><img src="/assets/imges/icon/visa.png" alt="" height="30"
+                                class="">:</label>
+                        <input type="text" class="w-75 bg-light py-3 px-3 border-0 fst-italic outline-none"
+                            placeholder="" value="*** *** 8438">
+                    </div>
+
+                    <div class="d-flex position-relative gap-3">
+                        <input type="checkbox" name="" class=" mb-0 z-3 opacity-0" id="checks1">
+                        <span
+                            class="spanCheck border position-absolute z-1 start-0 mt-1 d-flex justify-content-center align-items-center bg-light"><i
+                                class="bi bi-check"></i></span>
+                        <label for="checks1" class="fs-12 fw-400 mb-0 text-capitalize cursor-pointer">Lorem ipsum dolor
+                            sit amet consectetur adipisicing elit. Quibusdam Lorem, ipsum dolor.</label>
+                    </div>
+                    <!-- <div class="mt-5">
+                        <button type="submit"
+                            class=" border-0 bg-dark-yellow text-white w-100 mt-5 text-uppercase py-3">Continue
+                            to checkout</button>
+                    </div> -->
+
+                </form>
+                <div class="d-flex justify-content-center mt-5">
+                    <div class="col-10">
+                        <p class="text-capitalize fs-12">Your ri2k order will be forwarded to Global-e NL B.V., an
+                            international
+                            fulfillment
+                            service provider to Versace, who will be processing your order on Versace’s behalf</p>
+                        <p class="text-capitalize fs-12 ">By placing an order and clicking PAY AND PLACE ORDER below,
+                            you confirm
+                            that you agree to the <span class=""><a href="" class="fw-600 border-0 text-dark"> Terms of
+                                    Sale</a></span> and (ii) have read and understood the Versace Privacy Policy
+                            and the Global-e NL B.V. <span class=""><a href="" class="fw-600 border-0 text-dark">
+                                    Privacy Policy.</a></span></p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-center my-5 pt-4">
+                    <p
+                        class="col-md-8 col-10 d-flex align-items-center justify-content-center bg-dark-yellow border-0 text-white py-2">
+                        <i class="bi bi-check-circle px-1"></i>Out Place Succesfully
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!--************* footer *********** -->
+    <footer class="pt-5 bg-white ">
+        <div class="container d-flex justify-content-center align-items-center flex-column">
+
+            <div class=" col-12  footerImg-border mt-5">
+                <a href="" class="nav-link footerNav d-flex align-items-center"><img src="/assets/imges/icon/logo.png"
+                        alt="" class="img-contain"></a>
+            </div>
+            <div class="col-12 py-5">
+                <div class="d-flex justify-content-center align-items-center flex-wrap gap-xl-5 gap-4 lh-1">
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-dark">about us</a>
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-dark">contact us</a>
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-dark">blog</a>
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-dark">return policy</a>
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-dark">terms &
+                        conditions</a>
+                    <a href="" class="nav-link text-capitalize fs-5 fw-500 lh-1 m-0 text-dark">order-status</a>
+                </div>
+                <div class="d-flex justify-content-center flex-wrap mt-md-3 mt-5 gap-xl-5 gap-4 lh-1">
+                    <a href="" class=""><img src="/assets/imges/icon/PayPal - png.png" alt="" height="19" class=""></a>
+                    <a href="" class=""><img src="/assets/imges/icon/Mastercard - png.png" alt="" height="19"
+                            class=""></a>
+                    <a href="" class=""><img src="/assets/imges/icon/RuPay - png.png" alt="" height="19" class=""></a>
+                    <a href="" class=""><img src="/assets/imges/icon/Paytm - png.png" alt="" height="19" class=""></a>
+                    <a href="" class=""><img src="/assets/imges/icon/Visa Inc. - png.png" alt="" height="19"
+                            class=""></a>
+                </div>
+            </div>
+            <p class="text-gray fs-10 text-center text-uppercase ">© Copyright 2023, hOUSE OF HADAAYA.inc</p>
+        </div>
+    </footer>
+
+
+
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- owl-carousel  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets\js\script.js"></script>
+    <script src="assets\js/owl-carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

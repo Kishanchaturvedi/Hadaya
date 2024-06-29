@@ -167,3 +167,32 @@ $('#paginationContainer').owlCarousel({
         }
     }
 })
+
+
+// order-details******************
+
+$(document).ready(function () {
+    $('#carouselCard-5').owlCarousel({
+        loop: true,
+        dots: false,
+        autoWidth: true,
+        nav: true,
+        responsive: {
+            0: {
+                margin: 10,
+                items: 1
+            },
+            600: {
+                margin: 15,
+                items: 3
+            },
+            1000: {
+                margin: 19,
+                items: 4
+            }
+        }
+    });
+    $(".owl-prev").html('<i class="bi bi-arrow-left"></i>');
+    $(".owl-next").html('<i class="bi bi-arrow-right"></i>');
+
+});
